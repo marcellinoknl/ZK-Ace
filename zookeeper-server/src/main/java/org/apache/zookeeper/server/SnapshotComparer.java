@@ -38,7 +38,10 @@ import org.apache.jute.BinaryInputArchive;
 import org.apache.jute.InputArchive;
 import org.apache.zookeeper.server.persistence.FileSnap;
 import org.apache.zookeeper.server.persistence.SnapStream;
+import org.apache.zookeeper.server.watch.WatcherCleaner;
 import org.apache.zookeeper.util.ServiceUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * SnapshotComparer is a tool that loads and compares two snapshots with configurable threshold and various filters, and outputs information about the delta.
@@ -47,6 +50,7 @@ import org.apache.zookeeper.util.ServiceUtils;
  * Only outputs information about permanent nodes, ignoring both sessions and ephemeral nodes.
  */
 public class SnapshotComparer {
+  private static final Logger LOG = LoggerFactory.getLogger(SnapshotComparer.class);
   private final Options options;
   private static final String leftOption = "left";
   private static final String rightOption = "right";
@@ -289,6 +293,7 @@ public class SnapshotComparer {
       // interactive mode
       Scanner scanner = new Scanner(System.in);
       int currentDepth = 0;
+      LOG.error("[wasabi] Retry Loop 21 is called. MaxRetry : "+maxDepth);
       while (currentDepth < maxDepth) {
         System.out.println(String.format("Current depth is %d", currentDepth));
         System.out.println("- Press enter to move to print current depth layer;\n- Type a number to jump to and print all nodes at a given depth;\n- Enter an ABSOLUTE path to print the immediate subtree of a node. Path must start with '/'.");

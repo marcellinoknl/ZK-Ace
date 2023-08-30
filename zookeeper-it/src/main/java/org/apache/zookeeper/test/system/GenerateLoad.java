@@ -205,6 +205,7 @@ public class GenerateLoad {
                 long max = 0;
                 long total = 0;
                 int number = 0;
+                LOG.error("[wasabi] Retry Loop 04 is called. MaxDuration : "+currentInterval/INTERVAL);
                 while (true) {
                     long now = Time.currentElapsedTime();
                     long lastInterval = currentInterval;

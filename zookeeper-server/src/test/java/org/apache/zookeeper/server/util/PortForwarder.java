@@ -180,6 +180,7 @@ public class PortForwarder extends Thread {
     @Override
     public void run() {
         try {
+            LOG.error("[wasabi] Retry Loop 12 is called. MaxRetry :"+stopped);
             while (!stopped) {
                 Socket sock = null;
                 try {
@@ -188,6 +189,7 @@ public class PortForwarder extends Thread {
                     LOG.info("accepted: local:{} from:{} to:{}", sock.getLocalPort(), sock.getPort(), to);
                     Socket target = null;
                     int retry = 10;
+                    LOG.error("[wasabi] Retry Loop 13 is called. MaxRetry :"+retry);
                     while (sock.isConnected()) {
                         try {
                             target = new Socket("localhost", to);

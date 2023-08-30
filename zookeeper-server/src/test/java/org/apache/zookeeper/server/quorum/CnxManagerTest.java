@@ -120,7 +120,7 @@ public class CnxManagerTest extends ZKTestCase {
                 QuorumPeer peer = new QuorumPeer(peers, peerTmpdir[0], peerTmpdir[0], peerClientPort[0], 3, 0, 1000, 2, 2, 2);
                 QuorumCnxManager cnxManager = peer.createCnxnManager();
                 QuorumCnxManager.Listener listener = cnxManager.listener;
-                if (listener != null) {
+                if (listener != null) { 
                     listener.start();
                 } else {
                     LOG.error("Null listener when initializing cnx manager");
@@ -131,6 +131,7 @@ public class CnxManagerTest extends ZKTestCase {
 
                 Message m = null;
                 int numRetries = 1;
+                LOG.error("[wasabi] Retry Loop 10 is called. MaxRetry :"+THRESHOLD);
                 while ((m == null) && (numRetries++ <= THRESHOLD)) {
                     m = cnxManager.pollRecvQueue(3000, TimeUnit.MILLISECONDS);
                     if (m == null) {
@@ -176,6 +177,7 @@ public class CnxManagerTest extends ZKTestCase {
 
         Message m = null;
         int numRetries = 1;
+        LOG.error("[wasabi] Retry Loop 09 is called. MaxRetry :"+THRESHOLD);
         while ((m == null) && (numRetries++ <= THRESHOLD)) {
             m = cnxManager.pollRecvQueue(3000, TimeUnit.MILLISECONDS);
             if (m == null) {

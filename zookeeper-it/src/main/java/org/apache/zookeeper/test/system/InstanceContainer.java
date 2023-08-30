@@ -94,6 +94,7 @@ public class InstanceContainer implements Watcher, AsyncCallback.ChildrenCallbac
         }
 
         public void report(String report) throws KeeperException, InterruptedException {
+            LOG.error("[wasabi] Retry Loop 14 is called. MaxRetry :"+maxTries);
             for(int j = 0; j < maxTries; j++) {
                 try {
                     try {
@@ -131,6 +132,7 @@ public class InstanceContainer implements Watcher, AsyncCallback.ChildrenCallbac
 
     private void rmnod(String path) throws InterruptedException, KeeperException {
         KeeperException lastException = null;
+        LOG.error("[wasabi] Retry Loop 15 is called. MaxRetry :"+maxTries);
         for(int i = 0; i < maxTries; i++) {
             try {
                 zk.delete(path, -1);
@@ -148,6 +150,7 @@ public class InstanceContainer implements Watcher, AsyncCallback.ChildrenCallbac
         }
     }
     private void mknod_inner(String path, CreateMode mode) throws KeeperException, InterruptedException {
+        LOG.error("[wasabi] Retry Loop 16 is called. MaxRetry :"+maxTries);
         for(int i = 0; i < maxTries; i++) {
             try {
                 zk.create(path, null, Ids.OPEN_ACL_UNSAFE, mode);

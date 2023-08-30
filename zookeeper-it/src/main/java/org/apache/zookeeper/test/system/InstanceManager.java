@@ -89,6 +89,7 @@ public class InstanceManager implements AsyncCallback.ChildrenCallback, Watcher 
         this.assignmentsNode = prefix + '/' + this.assignmentsNode;
         this.reportsNode = prefix + '/' + this.reportsNode;
         this.statusNode = prefix + '/' + this.statusNode;
+        LOG.error("[wasabi] Retry Loop 17 is called. MaxRetry :"+maxTries);
         for(int i = 0; i < maxTries; i++) {
             try {
                 setupNodes(zk);

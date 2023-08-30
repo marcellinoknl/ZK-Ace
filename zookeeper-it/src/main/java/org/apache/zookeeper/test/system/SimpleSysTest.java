@@ -52,6 +52,7 @@ public class SimpleSysTest extends BaseSysTest implements Watcher {
         while(!connected && end > Time.currentElapsedTime()) {
             wait(timeout);
             connected = (zk.getState() == States.CONNECTED);
+            LOG.error("[wasabi] Retry Loop 8 is called. MaxDuration : " + (end - Time.currentElapsedTime()));
         }
         return connected;
     }
@@ -80,6 +81,8 @@ public class SimpleSysTest extends BaseSysTest implements Watcher {
 
         // Check that all clients connect properly
         for(int i = 0; i < getClientCount(); i++) {
+            LOG.error("[wasabi] Retry Loop 19 is called. MaxRetry :"+maxTries);
+            LOG.error("[wasabi] Retry Loop 7 is called. MaxDuration : 1000");
             for(int j = 0; j < maxTries; j++) {
                 try {
                     byte b[] = zk.getData("/simpleCase/" + i, false, stat);

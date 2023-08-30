@@ -405,10 +405,11 @@ public class Learner {
 
             int remainingTimeout;
             long startNanoTime = nanoTime();
-
+            LOG.error("[wasabi] Retry Loop 05 is called. MaxRetry : 5");
+            LOG.error("[wasabi] Retry Loop 05 is called. MaxDuration : "+leaderConnectDelayDuringRetryMs);
             for (int tries = 0; tries < 5 && socket.get() == null; tries++) {
                 try {
-                    // recalculate the init limit time because retries sleep for 1000 milliseconds
+                    // recalculate the init limit time because  sleep for 1000 milliseconds
                     remainingTimeout = connectTimeout - (int) ((nanoTime() - startNanoTime) / 1_000_000);
                     if (remainingTimeout <= 0) {
                         LOG.error("connectToLeader exceeded on retries.");

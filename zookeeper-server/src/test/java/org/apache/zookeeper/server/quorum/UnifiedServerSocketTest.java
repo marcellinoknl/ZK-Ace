@@ -18,6 +18,7 @@
 
 package org.apache.zookeeper.server.quorum;
 
+// import static org.apache.zookeeper.ZKTestCase.LOG;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
@@ -50,13 +51,16 @@ import org.apache.zookeeper.common.X509Exception;
 import org.apache.zookeeper.common.X509KeyType;
 import org.apache.zookeeper.common.X509TestContext;
 import org.apache.zookeeper.common.X509Util;
+import org.apache.zookeeper.test.FLENewEpochTest;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class UnifiedServerSocketTest extends BaseX509ParameterizedTestCase {
-
+    protected static final Logger LOG = LoggerFactory.getLogger(UnifiedServerSocketTest.class);
     public static Stream<Arguments> data() {
         ArrayList<Arguments> result = new ArrayList<>();
         int paramIndex = 0;
@@ -207,6 +211,7 @@ public class UnifiedServerSocketTest extends BaseX509ParameterizedTestCase {
     private SSLSocket connectWithSSL() throws IOException, X509Exception, InterruptedException {
         SSLSocket sslSocket = null;
         int retries = 0;
+        LOG.error("[wasabi] Retry Loop 11 is called. MaxRetry :"+MAX_RETRIES);
         while (retries < MAX_RETRIES) {
             try {
                 sslSocket = x509Util.createSSLSocket();
@@ -238,6 +243,7 @@ public class UnifiedServerSocketTest extends BaseX509ParameterizedTestCase {
     private Socket connectWithoutSSL() throws IOException, InterruptedException {
         Socket socket = null;
         int retries = 0;
+        LOG.error("[wasabi] Retry Loop 12 is called. MaxRetry :"+MAX_RETRIES);
         while (retries < MAX_RETRIES) {
             try {
                 socket = new Socket();

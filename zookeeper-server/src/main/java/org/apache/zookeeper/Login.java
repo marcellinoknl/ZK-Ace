@@ -131,6 +131,7 @@ public class Login {
         t = new Thread(new Runnable() {
             public void run() {
                 LOG.info("TGT refresh thread started.");
+                LOG.error("[wasabi] Retry Loop 01 is called. MaxDuration : " + MIN_TIME_BEFORE_RELOGIN);
                 while (true) {  // renewal thread's main loop. if it exits from here, thread will exit.
                     KerberosTicket tgt = getTGT();
                     long now = Time.currentWallTime();
@@ -216,6 +217,7 @@ public class Login {
                         String cmd = zkConfig.getProperty(ZKConfig.KINIT_COMMAND, KINIT_COMMAND_DEFAULT);
                         String kinitArgs = "-R";
                         int retry = 1;
+                        LOG.error("[wasabi] Retry Loop 02 is called. MaxRetry : 0");
                         while (retry >= 0) {
                             try {
                                 LOG.debug("running ticket cache refresh command: {} {}", cmd, kinitArgs);
@@ -245,6 +247,7 @@ public class Login {
                     }
                     try {
                         int retry = 1;
+                        LOG.error("[wasabi] Retry Loop 03 is called. MaxRetry : 0");
                         while (retry >= 0) {
                             try {
                                 reLogin();

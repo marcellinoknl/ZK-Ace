@@ -194,6 +194,8 @@ class QuorumPeerInstance implements Instance {
                 System.err.println("SnapDir = " + snapDir + " LogDir = " + logDir);
                 peer = new QuorumPeer(peers, snapDir, logDir, clientAddr.getPort(), 3, serverId, tickTime, initLimit, syncLimit, connectToLearnerMasterLimit);
                 peer.start();
+                LOG.error("[wasabi] Retry Loop 22 is called. MaxRetry: 5");
+                LOG.error("[wasabi] Retry Loop 6 is called. MaxDuration: ", 500);
                 for(int i = 0; i < 5; i++) {
                     Thread.sleep(500);
                     try {

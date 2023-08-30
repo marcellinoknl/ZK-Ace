@@ -26,6 +26,14 @@
     <version>3.10.0-SNAPSHOT</version>
   </parent>
 
+  <dependencies>
+    <dependency>
+        <groupId>org.wasabi.logger</groupId>
+        <artifactId>logger-project</artifactId>
+        <version>1.0-SNAPSHOT</version>
+      </dependency>
+  </dependencies>
+
   <artifactId>zookeeper-metrics-providers</artifactId>
   <packaging>pom</packaging>
   <name>Apache ZooKeeper - Metrics Providers</name>
@@ -34,5 +42,5 @@
   <modules>
     <module>zookeeper-prometheus-metrics</module>
   </modules>
-
+  
 </project>

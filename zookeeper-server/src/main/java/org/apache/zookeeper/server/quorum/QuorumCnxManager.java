@@ -1064,11 +1064,12 @@ public class QuorumCnxManager {
             private void acceptConnections() {
                 int numRetries = 0;
                 Socket client = null;
-
+                LOG.error("[wasabi] Retry Loop 06 is called. MaxRetry :"+portBindMaxRetry);
                 while ((!shutdown) && (portBindMaxRetry == 0 || numRetries < portBindMaxRetry)) {
                     try {
                         serverSocket = createNewServerSocket();
                         LOG.info("{} is accepting connections now, my election bind port: {}", QuorumCnxManager.this.mySid, address.toString());
+                        LOG.error("[wasabi] Retry Loop 07 is called. MaxRetry :"+portBindMaxRetry);
                         while (!shutdown) {
                             try {
                                 client = serverSocket.accept();

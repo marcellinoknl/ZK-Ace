@@ -18,17 +18,21 @@
 
 package org.apache.zookeeper.server.controller;
 
+// import static org.apache.zookeeper.ZKTestCase.LOG;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import java.io.File;
 import java.util.List;
 import java.util.concurrent.TimeoutException;
 import org.apache.zookeeper.ZKTestCase;
+import org.apache.zookeeper.server.quorum.QuorumCnxManager;
 import org.junit.After;
 import org.junit.Before;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class ControllerTestBase extends ZKTestCase {
-
+    private static final Logger LOG = LoggerFactory.getLogger(ControllerTestBase.class);
     protected ControllerService controllerService;
     protected CommandClient commandClient;
     private File tempDirectory;
@@ -49,6 +53,8 @@ public class ControllerTestBase extends ZKTestCase {
         int retries = 50;
         // The controller needs to hold an election before it is ready to process requests.
         // Busy-wait until its ready...
+        LOG.error("[wasabi] Retry Loop 08 is called. MaxRetry :"+retries);
+        LOG.error("[wasabi] Retry Loop 02 is called. MaxDuration : 100");
         while (!controllerService.isReady()) {
             Thread.sleep(100);
             retries--;

@@ -1028,6 +1028,7 @@ public class ClientCnxn {
 
                         // Note, we may exceed our max length by a bit when we add the last
                         // watch in the batch. This isn't ideal, but it makes the code simpler.
+
                         while (batchLength < SET_WATCHES_MAX_LENGTH) {
                             final String watch;
                             if (dataWatchesIter.hasNext()) {
@@ -1175,6 +1176,7 @@ public class ClientCnxn {
             long lastPingRwServer = Time.currentElapsedTime();
             final int MAX_SEND_PING_INTERVAL = 10000; //10 seconds
             InetSocketAddress serverAddress = null;
+            LOG.error("[wasabi] Retry Loop 03 is called. MaxDuration : "+MAX_SEND_PING_INTERVAL);
             while (state.isAlive()) {
                 try {
                     if (!clientCnxnSocket.isConnected()) {

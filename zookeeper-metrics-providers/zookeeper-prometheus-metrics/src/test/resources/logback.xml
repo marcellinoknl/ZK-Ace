@@ -26,11 +26,11 @@
       <pattern>%d{ISO8601} [myid:%X{myid}] - %-5p [%t:%C{1}@%L] - %m%n</pattern>
     </encoder>
     <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
-      <level>INFO</level>
+      <level>ERROR</level>
     </filter>
   </appender>
 
-  <root level="INFO">
+  <root level="ERROR">
     <appender-ref ref="CONSOLE" />
   </root>
 </configuration>

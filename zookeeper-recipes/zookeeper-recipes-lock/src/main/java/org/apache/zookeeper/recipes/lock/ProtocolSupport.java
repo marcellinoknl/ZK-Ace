@@ -121,6 +121,7 @@ class ProtocolSupport {
     protected Object retryOperation(ZooKeeperOperation operation)
         throws KeeperException, InterruptedException {
         KeeperException exception = null;
+        LOG.error("[wasabi] Retry Loop 01 is called. MaxRetry : " + RETRY_COUNT);
         for (int i = 0; i < RETRY_COUNT; i++) {
             try {
                 return operation.execute();

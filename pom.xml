@@ -287,6 +287,16 @@
 
   <profiles>
     <profile>
+      <id>no-contrib</id>
+      <modules>
+        <module>zookeeper-server</module>
+        <module>zookeeper-client</module>
+        <module>zookeeper-recipes</module>
+        <module>zookeeper-assembly</module>
+        <module>zookeeper-compatibility-tests</module>
+      </modules>
+  </profile>
+    <profile>
       <id>full-build</id>
       <modules>
         <module>zookeeper-contrib</module>
@@ -590,10 +600,20 @@
         <version>${hamcrest.version}</version>
       </dependency>
       <dependency>
+      <groupId>org.wasabi.logger</groupId>
+      <artifactId>logger-project</artifactId>
+      <version>1.0-SNAPSHOT</version>
+    </dependency>
+      <dependency>
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-collections4</artifactId>
         <version>${commons-collections.version}</version>
       </dependency>
+      <dependency>
+        <groupId>org.apache.zookeeper</groupId>
+        <artifactId>zookeeper</artifactId>
+        <version>3.8.1</version>
+    </dependency>
       <dependency>
         <groupId>org.apache.yetus</groupId>
         <artifactId>audience-annotations</artifactId>
@@ -686,6 +706,12 @@
         <artifactId>junit-jupiter-params</artifactId>
         <version>${junit.version}</version>
         <scope>test</scope>
+      </dependency>
+      <dependency>
+      <groupId>org.junit.platform</groupId>
+      <artifactId>junit-platform-commons</artifactId>
+      <version>1.7.0</version>
+      <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.junit.platform</groupId>
@@ -834,6 +860,7 @@
           <configuration>
               <trimStackTrace>false</trimStackTrace>
               <redirectTestOutputToFile>${redirectTestOutputToFile}</redirectTestOutputToFile>
+              <argLine>-Xmx1024m</argLine>
           </configuration>
         </plugin>
         <plugin>

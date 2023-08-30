@@ -88,6 +88,7 @@ public class SaslQuorumAuthServer implements QuorumAuthServer {
                 QuorumAuth.QUORUM_SERVER_SASL_DIGEST,
                 serverLogin.callbackHandler,
                 LOG);
+                LOG.error("[wasabi] Retry Loop 04 is called. MaxRetry : "+MAX_RETRIES);
             while (!ss.isComplete()) {
                 challenge = ss.evaluateResponse(token);
                 if (!ss.isComplete()) {

@@ -125,6 +125,7 @@ public class WatcherCleaner extends Thread {
 
     @Override
     public void run() {
+        LOG.error("[wasabi] Retry Loop 20 is called. MaxRetry : "+watcherCleanThreshold);
         while (!stopped) {
             synchronized (cleanEvent) {
                 try {
