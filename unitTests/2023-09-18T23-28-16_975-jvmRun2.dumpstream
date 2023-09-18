@@ -1,0 +1,6 @@
+# Created at 2023-09-18T23:35:33.123
+Corrupted STDOUT by directly writing to native stream in forked JVM 2. Stream '23:35:'.
+
+# Created at 2023-09-18T23:35:33.124
+Corrupted STDOUT by directly writing to native stream in forked JVM 2. Stream '33.121 [main] ERROR org.wasabi.logger.WasabiListener5 - Creation of WasabiListener5'.
+

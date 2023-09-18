@@ -23,7 +23,11 @@ import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Set;
+import java.util.regex.Pattern;
+
 import javax.security.auth.login.AppConfigurationEntry;
 import javax.security.auth.login.Configuration;
 import javax.security.auth.login.LoginException;
@@ -88,7 +92,22 @@ public class SaslQuorumAuthServer implements QuorumAuthServer {
                 QuorumAuth.QUORUM_SERVER_SASL_DIGEST,
                 serverLogin.callbackHandler,
                 LOG);
-                LOG.error("[wasabi] Retry Loop 04 is called. MaxRetry : "+MAX_RETRIES);
+
+                                // Get the current stack trace
+            StackTraceElement[] stackTrace = Thread.currentThread().getStackTrace();
+
+                        // Find all stack trace elements that contain the word 'test'
+            Pattern testStackTracePattern = Pattern.compile(".*test.*", Pattern.CASE_INSENSITIVE);
+            List<StackTraceElement> testStackTraceElements = new ArrayList<>();
+            for (int i = 0; i < stackTrace.length; i++) {
+                if (testStackTracePattern.matcher(stackTrace[i].getClassName()).matches()) {
+                    testStackTraceElements.add(stackTrace[i]);
+                }
+            }
+            // Log all test stack trace elements
+            for (StackTraceElement testStackTraceElement : testStackTraceElements) {
+                LOG.error("[wasabi] Retry Loop 04 is called. MaxRetry : "+MAX_RETRIES+"  stack trace element: " + testStackTraceElement.getClassName() + "." + testStackTraceElement.getMethodName() + " (Line " + testStackTraceElement.getLineNumber() + ")");
+            }
             while (!ss.isComplete()) {
                 challenge = ss.evaluateResponse(token);
                 if (!ss.isComplete()) {

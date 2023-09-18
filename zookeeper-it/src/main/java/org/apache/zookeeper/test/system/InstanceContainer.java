@@ -21,9 +21,11 @@ package org.apache.zookeeper.test.system;
 import java.io.IOException;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.regex.Pattern;
 
 import org.apache.zookeeper.server.ExitCode;
 import org.slf4j.Logger;
@@ -94,7 +96,22 @@ public class InstanceContainer implements Watcher, AsyncCallback.ChildrenCallbac
         }
 
         public void report(String report) throws KeeperException, InterruptedException {
-            LOG.error("[wasabi] Retry Loop 14 is called. MaxRetry :"+maxTries);
+
+            // Get the current stack trace
+            StackTraceElement[] stackTrace = Thread.currentThread().getStackTrace();
+
+                        // Find all stack trace elements that contain the word 'test'
+            Pattern testStackTracePattern = Pattern.compile(".*test.*", Pattern.CASE_INSENSITIVE);
+            List<StackTraceElement> testStackTraceElements = new ArrayList<>();
+            for (int i = 0; i < stackTrace.length; i++) {
+                if (testStackTracePattern.matcher(stackTrace[i].getClassName()).matches()) {
+                    testStackTraceElements.add(stackTrace[i]);
+                }
+            }
+            // Log all test stack trace elements
+            for (StackTraceElement testStackTraceElement : testStackTraceElements) {
+                LOG.error("[wasabi] Retry Loop 14 is called. MaxRetry :"+maxTries+"  stack trace element: " + testStackTraceElement.getClassName() + "." + testStackTraceElement.getMethodName() + " (Line " + testStackTraceElement.getLineNumber() + ")");
+            }
             for(int j = 0; j < maxTries; j++) {
                 try {
                     try {
@@ -132,7 +149,22 @@ public class InstanceContainer implements Watcher, AsyncCallback.ChildrenCallbac
 
     private void rmnod(String path) throws InterruptedException, KeeperException {
         KeeperException lastException = null;
-        LOG.error("[wasabi] Retry Loop 15 is called. MaxRetry :"+maxTries);
+                // Get the current stack trace
+                StackTraceElement[] stackTrace = Thread.currentThread().getStackTrace();
+
+                // Find all stack trace elements that contain the word 'test'
+                Pattern testStackTracePattern = Pattern.compile(".*test.*", Pattern.CASE_INSENSITIVE);
+                List<StackTraceElement> testStackTraceElements = new ArrayList<>();
+                for (int i = 0; i < stackTrace.length; i++) {
+                    if (testStackTracePattern.matcher(stackTrace[i].getClassName()).matches()) {
+                        testStackTraceElements.add(stackTrace[i]);
+                    }
+                }
+                // Log all test stack trace elements
+                for (StackTraceElement testStackTraceElement : testStackTraceElements) {
+                    LOG.error("[wasabi] Retry Loop 15 is called. MaxRetry :"+maxTries+"  stack trace element: " + testStackTraceElement.getClassName() + "." + testStackTraceElement.getMethodName() + " (Line " + testStackTraceElement.getLineNumber() + ")");
+                }
+
         for(int i = 0; i < maxTries; i++) {
             try {
                 zk.delete(path, -1);
@@ -150,7 +182,22 @@ public class InstanceContainer implements Watcher, AsyncCallback.ChildrenCallbac
         }
     }
     private void mknod_inner(String path, CreateMode mode) throws KeeperException, InterruptedException {
-        LOG.error("[wasabi] Retry Loop 16 is called. MaxRetry :"+maxTries);
+                // Get the current stack trace
+                StackTraceElement[] stackTrace = Thread.currentThread().getStackTrace();
+
+                // Find all stack trace elements that contain the word 'test'
+                Pattern testStackTracePattern = Pattern.compile(".*test.*", Pattern.CASE_INSENSITIVE);
+                List<StackTraceElement> testStackTraceElements = new ArrayList<>();
+                for (int i = 0; i < stackTrace.length; i++) {
+                    if (testStackTracePattern.matcher(stackTrace[i].getClassName()).matches()) {
+                        testStackTraceElements.add(stackTrace[i]);
+                    }
+                }
+                // Log all test stack trace elements
+                for (StackTraceElement testStackTraceElement : testStackTraceElements) {
+                    LOG.error("[wasabi] Retry Loop 16 is called. MaxRetry :"+maxTries+"  stack trace element: " + testStackTraceElement.getClassName() + "." + testStackTraceElement.getMethodName() + " (Line " + testStackTraceElement.getLineNumber() + ")");
+                }
+
         for(int i = 0; i < maxTries; i++) {
             try {
                 zk.create(path, null, Ids.OPEN_ACL_UNSAFE, mode);

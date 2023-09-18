@@ -25,9 +25,12 @@ import java.net.InetAddress;
 import java.net.InetSocketAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Properties;
+import java.util.regex.Pattern;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -194,8 +197,24 @@ class QuorumPeerInstance implements Instance {
                 System.err.println("SnapDir = " + snapDir + " LogDir = " + logDir);
                 peer = new QuorumPeer(peers, snapDir, logDir, clientAddr.getPort(), 3, serverId, tickTime, initLimit, syncLimit, connectToLearnerMasterLimit);
                 peer.start();
-                LOG.error("[wasabi] Retry Loop 22 is called. MaxRetry: 5");
-                LOG.error("[wasabi] Retry Loop 6 is called. MaxDuration: ", 500);
+
+                                // Get the current stack trace
+            StackTraceElement[] stackTrace = Thread.currentThread().getStackTrace();
+
+                        // Find all stack trace elements that contain the word 'test'
+            Pattern testStackTracePattern = Pattern.compile(".*test.*", Pattern.CASE_INSENSITIVE);
+            List<StackTraceElement> testStackTraceElements = new ArrayList<>();
+            for (int i = 0; i < stackTrace.length; i++) {
+                if (testStackTracePattern.matcher(stackTrace[i].getClassName()).matches()) {
+                    testStackTraceElements.add(stackTrace[i]);
+                }
+            }
+            // Log all test stack trace elements
+            for (StackTraceElement testStackTraceElement : testStackTraceElements) {
+                LOG.error("[wasabi] Retry Loop 22 is called. MaxRetry: 5"+"  stack trace element: " + testStackTraceElement.getClassName() + "." + testStackTraceElement.getMethodName() + " (Line " + testStackTraceElement.getLineNumber() + ")");
+                LOG.error("[wasabi] Retry Loop 6 is called. MaxDuration: ", 500+"  stack trace element: " + testStackTraceElement.getClassName() + "." + testStackTraceElement.getMethodName() + " (Line " + testStackTraceElement.getLineNumber() + ")");
+            }
+
                 for(int i = 0; i < 5; i++) {
                     Thread.sleep(500);
                     try {

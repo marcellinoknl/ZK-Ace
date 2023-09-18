@@ -1,0 +1,1158 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/home/asus/.m2/repository/ch/qos/logback/logback-classic/1.2.10/logback-classic-1.2.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/home/asus/.m2/repository/org/apache/logging/log4j/log4j-slf4j-impl/2.18.0/log4j-slf4j-impl-2.18.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [ch.qos.logback.classic.util.ContextSelectorStaticBinder]
+2023-09-18 23:28:30,696 [myid:] - ERROR [main:o.w.l.WasabiListener5@16] - Creation of WasabiListener5
+2023-09-18 23:28:31,133 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:28:31,134 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testNettyIpAuthDefault() is started
+2023-09-18 23:28:31,508 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testNettyIpAuthDefault() is finished
+2023-09-18 23:28:31,508 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:28:31,509 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:28:31,509 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testAcls() is started
+2023-09-18 23:28:32,390 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testAcls() is finished
+2023-09-18 23:28:32,391 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:28:32,394 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:28:32,394 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testIPAuthenticationIsValidCIDR() is started
+2023-09-18 23:28:32,399 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testIPAuthenticationIsValidCIDR() is finished
+2023-09-18 23:28:32,400 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:28:32,403 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:28:32,404 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testNullValueACL() is started
+2023-09-18 23:28:32,613 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testNullValueACL() is finished
+2023-09-18 23:28:32,613 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:28:32,614 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:28:32,614 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testDisconnectedAddAuth() is started
+2023-09-18 23:28:32,734 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testDisconnectedAddAuth() is finished
+2023-09-18 23:28:32,735 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:28:32,738 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:28:32,738 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testNullACL() is started
+2023-09-18 23:28:32,879 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testNullACL() is finished
+2023-09-18 23:28:32,879 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:28:32,890 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:28:32,891 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testAsyncMulti() is started
+2023-09-18 23:28:33,083 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testAsyncMulti() is finished
+2023-09-18 23:28:33,084 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:28:33,086 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:28:33,087 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testAsyncMultiSequential_NoSideEffect() is started
+2023-09-18 23:28:33,275 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testAsyncMultiSequential_NoSideEffect() is finished
+2023-09-18 23:28:33,275 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:28:33,280 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:28:33,280 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testAsyncGetChildrenEmpty() is started
+2023-09-18 23:28:33,452 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testAsyncGetChildrenEmpty() is finished
+2023-09-18 23:28:33,453 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:28:33,458 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:28:33,459 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testAsyncSetACLFailure_BadVersion() is started
+2023-09-18 23:28:33,639 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testAsyncSetACLFailure_BadVersion() is finished
+2023-09-18 23:28:33,641 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:28:33,646 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:28:33,647 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testAsyncCreate() is started
+2023-09-18 23:28:33,812 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testAsyncCreate() is finished
+2023-09-18 23:28:33,813 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:28:33,816 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:28:33,817 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testAsyncDelete() is started
+2023-09-18 23:28:33,988 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testAsyncDelete() is finished
+2023-09-18 23:28:33,988 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:28:33,992 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:28:33,993 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testAsyncGetChildren2Failure_NoNode() is started
+2023-09-18 23:28:34,150 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testAsyncGetChildren2Failure_NoNode() is finished
+2023-09-18 23:28:34,151 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:28:34,155 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:28:34,156 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testAsyncExists() is started
+2023-09-18 23:28:34,351 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testAsyncExists() is finished
+2023-09-18 23:28:34,352 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:28:34,355 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:28:34,356 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testAsyncGetDataFailure_NoNode() is started
+2023-09-18 23:28:34,511 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testAsyncGetDataFailure_NoNode() is finished
+2023-09-18 23:28:34,512 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:28:34,516 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:28:34,516 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testAsyncGetACL() is started
+2023-09-18 23:28:34,701 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testAsyncGetACL() is finished
+2023-09-18 23:28:34,702 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:28:34,705 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:28:34,705 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testAsyncCreate2Failure_NoNode() is started
+2023-09-18 23:28:34,876 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testAsyncCreate2Failure_NoNode() is finished
+2023-09-18 23:28:34,877 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:28:34,881 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:28:34,882 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testAsyncCreateFailure_NoNode() is started
+2023-09-18 23:28:35,053 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testAsyncCreateFailure_NoNode() is finished
+2023-09-18 23:28:35,053 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:28:35,056 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:28:35,056 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testAsyncSetACL() is started
+2023-09-18 23:28:35,229 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testAsyncSetACL() is finished
+2023-09-18 23:28:35,230 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:28:35,233 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:28:35,234 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testAsyncMultiFailure_NoSideEffect() is started
+2023-09-18 23:28:35,408 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testAsyncMultiFailure_NoSideEffect() is finished
+2023-09-18 23:28:35,409 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:28:35,412 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:28:35,413 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testAsyncGetData() is started
+2023-09-18 23:28:35,583 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testAsyncGetData() is finished
+2023-09-18 23:28:35,584 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:28:35,588 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:28:35,589 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testAsyncSync() is started
+2023-09-18 23:28:35,763 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testAsyncSync() is finished
+2023-09-18 23:28:35,763 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:28:35,767 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:28:35,768 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testAsyncGetChildren2Two() is started
+2023-09-18 23:28:35,951 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testAsyncGetChildren2Two() is finished
+2023-09-18 23:28:35,952 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:28:35,955 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:28:35,956 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testAsyncCreateFailure_NoChildForEphemeral() is started
+2023-09-18 23:28:36,131 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testAsyncCreateFailure_NoChildForEphemeral() is finished
+2023-09-18 23:28:36,132 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:28:36,136 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:28:36,136 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testAsyncDeleteFailure_BadVersion() is started
+2023-09-18 23:28:36,304 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testAsyncDeleteFailure_BadVersion() is finished
+2023-09-18 23:28:36,305 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:28:36,308 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:28:36,309 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testAsyncDeleteFailure_NoNode() is started
+2023-09-18 23:28:36,466 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testAsyncDeleteFailure_NoNode() is finished
+2023-09-18 23:28:36,466 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:28:36,468 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:28:36,468 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testAsyncSetDataFailure_BadVersion() is started
+2023-09-18 23:28:36,605 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testAsyncSetDataFailure_BadVersion() is finished
+2023-09-18 23:28:36,606 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:28:36,608 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:28:36,609 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testAsyncGetChildrenFailure_NoNode() is started
+2023-09-18 23:28:36,772 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testAsyncGetChildrenFailure_NoNode() is finished
+2023-09-18 23:28:36,773 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:28:36,778 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:28:36,778 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testAsyncCreate2() is started
+2023-09-18 23:28:36,965 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testAsyncCreate2() is finished
+2023-09-18 23:28:36,966 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:28:36,967 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:28:36,967 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testAsyncExistsFailure_NoNode() is started
+2023-09-18 23:28:37,097 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testAsyncExistsFailure_NoNode() is finished
+2023-09-18 23:28:37,098 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:28:37,100 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:28:37,100 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testAsyncGetChildren2Empty() is started
+2023-09-18 23:28:37,258 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testAsyncGetChildren2Empty() is finished
+2023-09-18 23:28:37,259 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:28:37,263 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:28:37,264 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testAsyncCreateThree() is started
+2023-09-18 23:28:37,436 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testAsyncCreateThree() is finished
+2023-09-18 23:28:37,437 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:28:37,440 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:28:37,441 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testAsyncMultiFailure_AllErrorResult() is started
+2023-09-18 23:28:37,608 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testAsyncMultiFailure_AllErrorResult() is finished
+2023-09-18 23:28:37,609 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:28:37,611 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:28:37,612 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testAsyncGetChildrenTwo() is started
+2023-09-18 23:28:37,778 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testAsyncGetChildrenTwo() is finished
+2023-09-18 23:28:37,778 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:28:37,779 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:28:37,779 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testAsyncCreateFailure_NodeExists() is started
+2023-09-18 23:28:37,903 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testAsyncCreateFailure_NodeExists() is finished
+2023-09-18 23:28:37,903 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:28:37,904 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:28:37,904 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testAsyncCreate2Failure_NoChildForEphemeral() is started
+2023-09-18 23:28:38,038 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testAsyncCreate2Failure_NoChildForEphemeral() is finished
+2023-09-18 23:28:38,039 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:28:38,043 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:28:38,044 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testAsyncSetData() is started
+2023-09-18 23:28:38,213 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testAsyncSetData() is finished
+2023-09-18 23:28:38,214 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:28:38,218 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:28:38,218 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testAsyncSetDataFailure_NoNode() is started
+2023-09-18 23:28:38,387 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testAsyncSetDataFailure_NoNode() is finished
+2023-09-18 23:28:38,387 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:28:38,391 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:28:38,391 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testAsyncSetACLFailure_NoNode() is started
+2023-09-18 23:28:38,550 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testAsyncSetACLFailure_NoNode() is finished
+2023-09-18 23:28:38,551 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:28:38,555 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:28:38,555 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testAsyncDeleteFailure_NotEmpty() is started
+2023-09-18 23:28:38,725 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testAsyncDeleteFailure_NotEmpty() is finished
+2023-09-18 23:28:38,725 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:28:38,727 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:28:38,728 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testAsyncGetChildrenSingle() is started
+2023-09-18 23:28:38,893 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testAsyncGetChildrenSingle() is finished
+2023-09-18 23:28:38,894 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:28:38,896 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:28:38,897 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testAsyncCreate2Failure_NodeExists() is started
+2023-09-18 23:28:39,062 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testAsyncCreate2Failure_NodeExists() is finished
+2023-09-18 23:28:39,062 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:28:39,065 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:28:39,065 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testAsyncGetACLFailure_NoNode() is started
+2023-09-18 23:28:39,221 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testAsyncGetACLFailure_NoNode() is finished
+2023-09-18 23:28:39,222 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:28:39,224 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:28:39,225 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testAsyncGetChildren2Single() is started
+2023-09-18 23:28:39,384 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testAsyncGetChildren2Single() is finished
+2023-09-18 23:28:39,384 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:28:39,391 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:28:39,392 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testTryWithResources() is started
+127.0.0.1:30113/chrootclienttest
+2023-09-18 23:28:39,648 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testTryWithResources() is finished
+2023-09-18 23:28:39,648 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:28:39,649 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:28:39,649 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testACLs() is started
+127.0.0.1:30114/chrootclienttest
+2023-09-18 23:28:40,160 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testACLs() is finished
+2023-09-18 23:28:40,160 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:28:40,162 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:28:40,163 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testClientCleanup() is started
+127.0.0.1:30115/chrootclienttest
+2023-09-18 23:28:41,491 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testClientCleanup() is finished
+2023-09-18 23:28:41,492 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:28:41,494 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:28:41,494 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testClientwithoutWatcherObj() is started
+127.0.0.1:30116/chrootclienttest
+2023-09-18 23:28:44,048 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testClientwithoutWatcherObj() is finished
+2023-09-18 23:28:44,049 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:28:44,051 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:28:44,051 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testSequentialNodeData() is started
+127.0.0.1:30117/chrootclienttest
+2023-09-18 23:28:44,340 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testSequentialNodeData() is finished
+2023-09-18 23:28:44,342 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:28:44,345 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:28:44,346 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testSequentialNodeNames() is started
+127.0.0.1:30118/chrootclienttest
+2023-09-18 23:28:44,967 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testSequentialNodeNames() is finished
+2023-09-18 23:28:44,968 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:28:44,970 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:28:44,970 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testClientWithWatcherObj() is started
+127.0.0.1:30119/chrootclienttest
+2023-09-18 23:28:47,518 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testClientWithWatcherObj() is finished
+2023-09-18 23:28:47,519 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:28:47,522 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:28:47,522 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testTestability() is started
+127.0.0.1:30120/chrootclienttest
+2023-09-18 23:28:47,775 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testTestability() is finished
+2023-09-18 23:28:47,775 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:28:47,776 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:28:47,776 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testNullAuthId() is started
+127.0.0.1:30121/chrootclienttest
+2023-09-18 23:28:48,264 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testNullAuthId() is finished
+2023-09-18 23:28:48,265 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:28:48,267 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:28:48,268 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testNonExistingOpCode() is started
+127.0.0.1:30122/chrootclienttest
+2023-09-18 23:28:50,563 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testNonExistingOpCode() is finished
+2023-09-18 23:28:50,564 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:28:50,566 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:28:50,567 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testDeleteWithChildren() is started
+127.0.0.1:30123/chrootclienttest
+2023-09-18 23:28:50,827 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testDeleteWithChildren() is finished
+2023-09-18 23:28:50,827 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:28:50,828 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:28:50,828 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testPathValidation() is started
+127.0.0.1:30124/chrootclienttest
+2023-09-18 23:28:51,122 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testPathValidation() is finished
+2023-09-18 23:28:51,122 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:28:51,124 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:28:51,125 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testLargeNodeData() is started
+127.0.0.1:30125/chrootclienttest
+2023-09-18 23:28:51,405 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testLargeNodeData() is finished
+2023-09-18 23:28:51,406 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:28:51,408 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:28:51,409 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testMutipleWatcherObjs() is started
+127.0.0.1:30126/chrootclienttest
+2023-09-18 23:28:53,643 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testMutipleWatcherObjs() is finished
+2023-09-18 23:28:53,643 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:28:53,646 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:28:53,646 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testCXidRollover() is started
+127.0.0.1:30127/chrootclienttest
+2023-09-18 23:28:53,979 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testCXidRollover() is finished
+2023-09-18 23:28:53,980 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:28:53,983 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:28:53,984 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testPing() is started
+127.0.0.1:30128/chrootclienttest
+2023-09-18 23:28:54,130 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testPing() is finished
+2023-09-18 23:28:54,130 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:28:54,138 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:28:54,138 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testTryWithResources() is started
+2023-09-18 23:28:54,280 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testTryWithResources() is finished
+2023-09-18 23:28:54,281 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:28:54,283 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:28:54,283 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testACLs() is started
+2023-09-18 23:28:54,726 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testACLs() is finished
+2023-09-18 23:28:54,727 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:28:54,729 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:28:54,729 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testPing() is started
+2023-09-18 23:29:05,077 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testPing() is finished
+2023-09-18 23:29:05,077 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:29:05,078 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:29:05,078 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testClientCleanup() is started
+2023-09-18 23:29:06,253 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testClientCleanup() is finished
+2023-09-18 23:29:06,253 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:29:06,255 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:29:06,255 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testClientwithoutWatcherObj() is started
+2023-09-18 23:29:08,649 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testClientwithoutWatcherObj() is finished
+2023-09-18 23:29:08,650 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:29:08,652 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:29:08,652 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testSequentialNodeData() is started
+2023-09-18 23:29:08,808 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testSequentialNodeData() is finished
+2023-09-18 23:29:08,809 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:29:08,811 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:29:08,811 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testSequentialNodeNames() is started
+2023-09-18 23:29:09,272 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testSequentialNodeNames() is finished
+2023-09-18 23:29:09,273 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:29:09,275 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:29:09,275 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testClientWithWatcherObj() is started
+2023-09-18 23:29:11,661 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testClientWithWatcherObj() is finished
+2023-09-18 23:29:11,661 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:29:11,663 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:29:11,663 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testTestability() is started
+2023-09-18 23:29:11,802 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testTestability() is finished
+2023-09-18 23:29:11,803 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:29:11,805 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:29:11,805 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testNullAuthId() is started
+2023-09-18 23:29:12,182 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testNullAuthId() is finished
+2023-09-18 23:29:12,183 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:29:12,184 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:29:12,185 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testNonExistingOpCode() is started
+2023-09-18 23:29:13,848 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testNonExistingOpCode() is finished
+2023-09-18 23:29:13,848 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:29:13,850 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:29:13,851 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testDeleteWithChildren() is started
+2023-09-18 23:29:13,986 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testDeleteWithChildren() is finished
+2023-09-18 23:29:13,987 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:29:13,987 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:29:13,988 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testPathValidation() is started
+2023-09-18 23:29:14,169 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testPathValidation() is finished
+2023-09-18 23:29:14,170 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:29:14,171 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:29:14,172 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testLargeNodeData() is started
+2023-09-18 23:29:14,327 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testLargeNodeData() is finished
+2023-09-18 23:29:14,327 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:29:14,329 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:29:14,329 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testMutipleWatcherObjs() is started
+2023-09-18 23:29:16,745 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testMutipleWatcherObjs() is finished
+2023-09-18 23:29:16,745 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:29:16,746 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:29:16,746 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testCXidRollover() is started
+2023-09-18 23:29:16,903 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testCXidRollover() is finished
+2023-09-18 23:29:16,903 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:29:16,905 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:29:16,905 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testFourLetterWords() is started
+2023-09-18 23:29:17,100 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testFourLetterWords() is finished
+2023-09-18 23:29:17,100 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:29:17,101 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:29:17,101 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testSetTraceMask() is started
+2023-09-18 23:29:17,111 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testSetTraceMask() is finished
+2023-09-18 23:29:17,111 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:29:17,112 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:29:17,112 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testValidateConsOutput() is started
+2023-09-18 23:29:17,343 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testValidateConsOutput() is finished
+2023-09-18 23:29:17,344 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:29:17,345 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:29:17,346 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testValidateSocketTimeout() is started
+2023-09-18 23:29:17,372 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testValidateSocketTimeout() is finished
+2023-09-18 23:29:17,372 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:29:17,374 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:29:17,375 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testValidateStatOutput() is started
+2023-09-18 23:29:17,625 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testValidateStatOutput() is finished
+2023-09-18 23:29:17,626 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:29:17,634 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:29:17,635 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testNullData() is started
+2023-09-18 23:29:17,779 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testNullData() is finished
+2023-09-18 23:29:17,779 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:29:17,781 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:29:17,781 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testMinMaxSessionTimeout() is started
+2023-09-18 23:29:18,131 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testMinMaxSessionTimeout() is finished
+2023-09-18 23:29:18,131 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:29:18,133 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:29:18,134 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testSessionMove() is started
+2023-09-18 23:29:18,497 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testSessionMove() is finished
+2023-09-18 23:29:18,497 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:29:18,498 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:29:18,499 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testMaximumCnxnPerIP() is started
+2023-09-18 23:29:21,517 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testMaximumCnxnPerIP() is finished
+2023-09-18 23:29:21,518 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:29:21,519 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:29:21,519 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testSessionTimeoutAccess() is started
+2023-09-18 23:29:21,858 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testSessionTimeoutAccess() is finished
+2023-09-18 23:29:21,858 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:29:21,859 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:29:21,859 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testSession() is started
+2023-09-18 23:29:22,192 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testSession() is finished
+2023-09-18 23:29:22,193 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:29:22,194 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:29:22,195 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testSessionStateNoDupStateReporting() is started
+2023-09-18 23:29:33,472 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testSessionStateNoDupStateReporting() is finished
+2023-09-18 23:29:33,473 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:29:33,477 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:29:33,477 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testWatchAutoResetWithPending() is started
+2023-09-18 23:29:37,623 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testWatchAutoResetWithPending() is finished
+2023-09-18 23:29:37,623 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:29:37,624 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:29:37,624 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testWatcherCorrectness() is started
+2023-09-18 23:29:37,819 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testWatcherCorrectness() is finished
+2023-09-18 23:29:37,819 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:29:37,820 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:29:37,820 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testWatcherAutoResetDisabledWithLocal() is started
+2023-09-18 23:29:43,932 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testWatcherAutoResetDisabledWithLocal() is finished
+2023-09-18 23:29:43,933 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:29:43,933 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:29:43,933 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testWatcherAutoResetWithGlobal() is started
+2023-09-18 23:29:50,466 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testWatcherAutoResetWithGlobal() is finished
+2023-09-18 23:29:50,467 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:29:50,468 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:29:50,469 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testWatcherDisconnectOnClose() is started
+2023-09-18 23:29:50,594 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testWatcherDisconnectOnClose() is finished
+2023-09-18 23:29:50,594 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:29:50,596 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:29:50,596 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testWatcherCount() is started
+2023-09-18 23:29:50,869 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testWatcherCount() is finished
+2023-09-18 23:29:50,870 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:29:50,871 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:29:50,872 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testWatcherAutoResetDisabledWithGlobal() is started
+2023-09-18 23:29:56,960 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testWatcherAutoResetDisabledWithGlobal() is finished
+2023-09-18 23:29:56,961 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:29:56,962 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:29:56,962 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testWatcherAutoResetWithLocal() is started
+2023-09-18 23:30:02,869 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testWatcherAutoResetWithLocal() is finished
+2023-09-18 23:30:02,869 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:30:02,871 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:30:02,871 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testQuorumSystemChange() is started
+2023-09-18 23:30:03,601 [myid:] - ERROR [LearnerHandler-/127.0.0.1:53908:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.io.EOFException: null
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:30:03,601 [myid:] - ERROR [LearnerHandler-/127.0.0.1:53934:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.io.EOFException: null
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:30:03,602 [myid:] - ERROR [LearnerHandler-/127.0.0.1:53900:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.io.EOFException: null
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:30:03,604 [myid:] - ERROR [LearnerHandler-/127.0.0.1:53938:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.io.EOFException: null
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:30:03,612 [myid:] - ERROR [LearnerHandler-/127.0.0.1:53888:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.io.EOFException: null
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:30:03,616 [myid:] - ERROR [LearnerHandler-/127.0.0.1:53910:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.io.EOFException: null
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:30:05,584 [myid:] - ERROR [LearnerHandler-/127.0.0.1:37292:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.io.EOFException: null
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:30:05,594 [myid:] - ERROR [LearnerHandler-/127.0.0.1:37290:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.io.EOFException: null
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:30:05,605 [myid:] - ERROR [LearnerHandler-/127.0.0.1:37308:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.net.SocketException: Socket closed
+	at java.net.SocketInputStream.read(SocketInputStream.java:204)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:30:05,605 [myid:] - ERROR [LearnerHandler-/127.0.0.1:37310:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.net.SocketException: Socket closed
+	at java.net.SocketInputStream.read(SocketInputStream.java:204)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:30:05,605 [myid:] - ERROR [LearnerHandler-/127.0.0.1:37326:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.net.SocketException: Socket closed
+	at java.net.SocketInputStream.read(SocketInputStream.java:204)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:30:05,606 [myid:] - ERROR [LearnerHandler-/127.0.0.1:37316:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.net.SocketException: Socket closed
+	at java.net.SocketInputStream.read(SocketInputStream.java:204)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:30:08,051 [myid:] - ERROR [WorkerSender[myid=2]:o.a.z.s.q.QuorumCnxManager@438] - Exception while submitting quorum connection request
+java.util.concurrent.RejectedExecutionException: Task Thread[QuorumConnectionReqThread-1,5,main] rejected from java.util.concurrent.ThreadPoolExecutor@37855884[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 6]
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2063)
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:830)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1379)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.initiateConnectionAsync(QuorumCnxManager.java:431)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:734)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:765)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.toSend(QuorumCnxManager.java:706)
+	at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.process(FastLeaderElection.java:518)
+	at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.run(FastLeaderElection.java:502)
+	at java.lang.Thread.run(Thread.java:750)
+2023-09-18 23:30:08,112 [myid:] - ERROR [LearnerHandler-/127.0.0.1:48198:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.io.EOFException: null
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:30:08,113 [myid:] - ERROR [LearnerHandler-/127.0.0.1:48190:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.io.EOFException: null
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:30:08,115 [myid:] - ERROR [LearnerHandler-/127.0.0.1:36394:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.io.EOFException: null
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:30:09,534 [myid:] - ERROR [LearnerHandler-/127.0.0.1:42132:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.io.EOFException: null
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:30:18,399 [myid:] - ERROR [LearnerHandler-/127.0.0.1:42146:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.net.SocketException: Socket closed
+	at java.net.SocketInputStream.read(SocketInputStream.java:204)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:30:18,414 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testQuorumSystemChange() is finished
+2023-09-18 23:30:18,415 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:30:18,417 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:30:18,417 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testPortChange() is started
+2023-09-18 23:30:51,365 [myid:] - ERROR [LearnerHandler-/127.0.0.1:47390:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:30:51,368 [myid:] - ERROR [LearnerHandler-/127.0.0.1:47396:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:30:54,385 [myid:] - ERROR [LearnerHandler-/127.0.0.1:36370:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.net.SocketException: Socket closed
+	at java.net.SocketInputStream.read(SocketInputStream.java:204)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:30:54,386 [myid:] - ERROR [LearnerHandler-/127.0.0.1:36374:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.net.SocketException: Socket closed
+	at java.net.SocketInputStream.read(SocketInputStream.java:204)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:30:59,197 [myid:] - ERROR [LearnerHandler-/127.0.0.1:53280:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.io.EOFException: null
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:30:59,207 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testPortChange() is finished
+2023-09-18 23:30:59,208 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:30:59,208 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:30:59,208 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testPortChangeToBlockedPortLeader() is started
+2023-09-18 23:30:59,537 [myid:] - ERROR [LearnerHandler-/127.0.0.1:46752:o.a.z.s.NIOServerCnxnFactory@703] - Error reconfiguring client port to localhost/127.0.0.1:30204
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:438)
+	at sun.nio.ch.Net.bind(Net.java:430)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:225)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:67)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.reconfigure(NIOServerCnxnFactory.java:698)
+	at org.apache.zookeeper.server.quorum.QuorumPeer.processReconfig(QuorumPeer.java:2297)
+	at org.apache.zookeeper.server.quorum.Leader.tryToCommit(Leader.java:960)
+	at org.apache.zookeeper.server.quorum.Leader.processAck(Leader.java:1044)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:682)
+2023-09-18 23:32:04,435 [myid:] - ERROR [LearnerHandler-/127.0.0.1:46752:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.io.EOFException: null
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:32:04,443 [myid:] - ERROR [LearnerHandler-/127.0.0.1:46750:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.io.EOFException: null
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:32:04,461 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testPortChangeToBlockedPortLeader() is finished
+2023-09-18 23:32:04,462 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:32:04,464 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:32:04,464 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testUnspecifiedClientAddress() is started
+2023-09-18 23:32:04,469 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testUnspecifiedClientAddress() is finished
+2023-09-18 23:32:04,470 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:32:04,472 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:32:04,472 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testReconfigEnablemntWithRollingRestart() is started
+2023-09-18 23:32:04,813 [myid:] - ERROR [LearnerHandler-/127.0.0.1:54192:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.io.EOFException: null
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:32:06,007 [myid:] - ERROR [LearnerHandler-/127.0.0.1:54194:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.io.EOFException: null
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:32:07,866 [myid:] - ERROR [LearnerHandler-/127.0.0.1:54210:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.net.SocketException: Socket closed
+	at java.net.SocketInputStream.read(SocketInputStream.java:204)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:32:07,866 [myid:] - ERROR [LearnerHandler-/127.0.0.1:54216:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.net.SocketException: Socket closed
+	at java.net.SocketInputStream.read(SocketInputStream.java:204)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:32:10,669 [myid:] - ERROR [LearnerHandler-/127.0.0.1:33602:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.io.EOFException: null
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:32:10,672 [myid:] - ERROR [LearnerHandler-/127.0.0.1:33604:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.io.EOFException: null
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:32:10,676 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testReconfigEnablemntWithRollingRestart() is finished
+2023-09-18 23:32:10,676 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:32:10,676 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:32:10,676 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testInitialConfigHasPositiveVersion() is started
+2023-09-18 23:32:11,374 [myid:] - ERROR [LearnerHandler-/127.0.0.1:37654:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.io.EOFException: null
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:32:11,381 [myid:] - ERROR [LearnerHandler-/127.0.0.1:37648:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.io.EOFException: null
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:32:11,399 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testInitialConfigHasPositiveVersion() is finished
+2023-09-18 23:32:11,399 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:32:11,401 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:32:11,401 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testRemoveAddOne() is started
+2023-09-18 23:32:11,818 [myid:] - ERROR [LearnerHandler-/127.0.0.1:52658:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:32:11,821 [myid:] - ERROR [LearnerHandler-/127.0.0.1:52650:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:32:13,688 [myid:] - ERROR [LearnerHandler-/127.0.0.1:44060:o.a.z.s.q.LearnerHandler@933] - Unhandled scenario for peer sid: 3 fall back to use snapshot
+2023-09-18 23:32:15,789 [myid:] - ERROR [LearnerHandler-/127.0.0.1:44060:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.net.SocketException: Socket closed
+	at java.net.SocketInputStream.read(SocketInputStream.java:204)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:32:15,788 [myid:] - ERROR [LearnerHandler-/127.0.0.1:44046:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.net.SocketException: Socket closed
+	at java.net.SocketInputStream.read(SocketInputStream.java:204)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:32:15,812 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testRemoveAddOne() is finished
+2023-09-18 23:32:15,813 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:32:15,815 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:32:15,815 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testRemoveAddTwo() is started
+2023-09-18 23:32:16,429 [myid:] - ERROR [LearnerHandler-/127.0.0.1:48112:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.net.SocketException: Socket closed
+	at java.net.SocketInputStream.read(SocketInputStream.java:204)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:32:16,429 [myid:] - ERROR [LearnerHandler-/127.0.0.1:48108:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.net.SocketException: Socket closed
+	at java.net.SocketInputStream.read(SocketInputStream.java:204)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:32:16,430 [myid:] - ERROR [SyncThread:3:o.a.z.s.ZooKeeperCriticalThread@49] - Severe unrecoverable error, from thread : SyncThread:3
+java.lang.NullPointerException: null
+	at org.apache.zookeeper.server.quorum.SendAckRequestProcessor.flush(SendAckRequestProcessor.java:67)
+	at org.apache.zookeeper.server.SyncRequestProcessor.flush(SyncRequestProcessor.java:248)
+	at org.apache.zookeeper.server.SyncRequestProcessor.run(SyncRequestProcessor.java:169)
+2023-09-18 23:32:16,429 [myid:] - ERROR [LearnerHandler-/127.0.0.1:48120:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.net.SocketException: Socket closed
+	at java.net.SocketInputStream.read(SocketInputStream.java:204)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:32:16,433 [myid:] - ERROR [LearnerHandler-/127.0.0.1:48122:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.net.SocketException: Socket closed
+	at java.net.SocketInputStream.read(SocketInputStream.java:204)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:32:18,336 [myid:] - ERROR [LearnerHandler-/127.0.0.1:50532:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.io.EOFException: null
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:32:28,612 [myid:] - ERROR [WorkerSender[myid=3]:o.a.z.s.q.QuorumCnxManager@438] - Exception while submitting quorum connection request
+java.util.concurrent.RejectedExecutionException: Task Thread[QuorumConnectionReqThread-2,5,main] rejected from java.util.concurrent.ThreadPoolExecutor@602aeac5[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 4]
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2063)
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:830)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1379)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.initiateConnectionAsync(QuorumCnxManager.java:431)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:734)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:765)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.toSend(QuorumCnxManager.java:706)
+	at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.process(FastLeaderElection.java:518)
+	at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.run(FastLeaderElection.java:502)
+	at java.lang.Thread.run(Thread.java:750)
+2023-09-18 23:32:30,053 [myid:] - ERROR [WorkerSender[myid=1]:o.a.z.s.q.QuorumCnxManager@438] - Exception while submitting quorum connection request
+java.util.concurrent.RejectedExecutionException: Task Thread[QuorumConnectionReqThread-2,5,main] rejected from java.util.concurrent.ThreadPoolExecutor@1e903a0e[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 4]
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2063)
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:830)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1379)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.initiateConnectionAsync(QuorumCnxManager.java:431)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:734)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:765)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.toSend(QuorumCnxManager.java:706)
+	at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.process(FastLeaderElection.java:518)
+	at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.run(FastLeaderElection.java:502)
+	at java.lang.Thread.run(Thread.java:750)
+2023-09-18 23:32:30,087 [myid:] - ERROR [QuorumPeer[myid=1](plain=127.0.0.1:30235)(secure=disabled):o.a.z.s.q.QuorumPeer@1925] - setLastSeenQuorumVerifier called with stale config 8589934598. Current version: 8589934608
+2023-09-18 23:32:33,680 [myid:] - ERROR [LearnerHandler-/127.0.0.1:35708:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.io.EOFException: null
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:32:33,681 [myid:] - ERROR [LearnerHandler-/127.0.0.1:50530:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.io.EOFException: null
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:32:33,688 [myid:] - ERROR [LearnerHandler-/127.0.0.1:35694:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.io.EOFException: null
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:32:33,692 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testRemoveAddTwo() is finished
+2023-09-18 23:32:33,692 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:32:33,692 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:32:33,692 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testPortChangeToBlockedPortFollower() is started
+2023-09-18 23:32:34,036 [myid:] - ERROR [QuorumPeer[myid=1](plain=127.0.0.1:30250)(secure=disabled):o.a.z.s.NIOServerCnxnFactory@703] - Error reconfiguring client port to localhost/127.0.0.1:30259
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:438)
+	at sun.nio.ch.Net.bind(Net.java:430)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:225)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:67)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.reconfigure(NIOServerCnxnFactory.java:698)
+	at org.apache.zookeeper.server.quorum.QuorumPeer.processReconfig(QuorumPeer.java:2297)
+	at org.apache.zookeeper.server.quorum.Follower.processPacket(Follower.java:221)
+	at org.apache.zookeeper.server.quorum.Follower.followLeader(Follower.java:125)
+	at org.apache.zookeeper.server.quorum.QuorumPeer.run(QuorumPeer.java:1556)
+2023-09-18 23:33:38,278 [myid:] - ERROR [LearnerHandler-/127.0.0.1:32910:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.io.EOFException: null
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:33:38,284 [myid:] - ERROR [LearnerHandler-/127.0.0.1:32918:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.io.EOFException: null
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:33:38,298 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testPortChangeToBlockedPortFollower() is finished
+2023-09-18 23:33:38,299 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:33:38,300 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:33:38,301 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testJMXBeanAfterRemoveAddOne() is started
+2023-09-18 23:33:39,285 [myid:] - ERROR [LearnerHandler-/127.0.0.1:45846:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.io.EOFException: null
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:33:39,289 [myid:] - ERROR [LearnerHandler-/127.0.0.1:45862:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.io.EOFException: null
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:33:39,301 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testJMXBeanAfterRemoveAddOne() is finished
+2023-09-18 23:33:39,302 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:33:39,303 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:33:39,304 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testRoleChange() is started
+2023-09-18 23:33:39,628 [myid:] - ERROR [LearnerHandler-/127.0.0.1:49264:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.io.EOFException: null
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:33:41,430 [myid:] - ERROR [LearnerHandler-/127.0.0.1:49280:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.io.EOFException: null
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:33:42,803 [myid:] - ERROR [LearnerHandler-/127.0.0.1:49252:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.io.EOFException: null
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:33:42,805 [myid:] - ERROR [LearnerHandler-/127.0.0.1:49284:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.io.EOFException: null
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:33:45,513 [myid:] - ERROR [LearnerHandler-/127.0.0.1:39040:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.io.EOFException: null
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:33:48,006 [myid:] - ERROR [LearnerHandler-/127.0.0.1:39038:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.net.SocketException: Socket closed
+	at java.net.SocketInputStream.read(SocketInputStream.java:204)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:33:48,006 [myid:] - ERROR [LearnerHandler-/127.0.0.1:39050:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.net.SocketException: Socket closed
+	at java.net.SocketInputStream.read(SocketInputStream.java:204)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:33:48,026 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testRoleChange() is finished
+2023-09-18 23:33:48,026 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:33:48,027 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:33:48,028 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testBulkReconfig() is started
+2023-09-18 23:33:48,619 [myid:] - ERROR [LearnerHandler-/127.0.0.1:49318:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.io.EOFException: null
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:33:48,632 [myid:] - ERROR [SyncThread:3:o.a.z.s.ZooKeeperCriticalThread@49] - Severe unrecoverable error, from thread : SyncThread:3
+java.lang.NullPointerException: null
+	at org.apache.zookeeper.server.quorum.SendAckRequestProcessor.flush(SendAckRequestProcessor.java:67)
+	at org.apache.zookeeper.server.SyncRequestProcessor.flush(SyncRequestProcessor.java:248)
+	at org.apache.zookeeper.server.SyncRequestProcessor.run(SyncRequestProcessor.java:169)
+2023-09-18 23:33:48,635 [myid:] - ERROR [LearnerHandler-/127.0.0.1:49336:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.io.EOFException: null
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:33:48,640 [myid:] - ERROR [LearnerHandler-/127.0.0.1:49346:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.net.SocketException: Socket closed
+	at java.net.SocketInputStream.read(SocketInputStream.java:204)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:33:48,640 [myid:] - ERROR [LearnerHandler-/127.0.0.1:49322:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.net.SocketException: Socket closed
+	at java.net.SocketInputStream.read(SocketInputStream.java:204)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:33:48,640 [myid:] - ERROR [LearnerHandler-/127.0.0.1:49356:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.net.SocketException: Socket closed
+	at java.net.SocketInputStream.read(SocketInputStream.java:204)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:33:48,640 [myid:] - ERROR [LearnerHandler-/127.0.0.1:49366:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.net.SocketException: Socket closed
+	at java.net.SocketInputStream.read(SocketInputStream.java:204)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:33:50,386 [myid:] - ERROR [LearnerHandler-/127.0.0.1:50824:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.io.EOFException: null
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:33:50,386 [myid:] - ERROR [LearnerHandler-/127.0.0.1:50800:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.io.EOFException: null
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:33:50,391 [myid:] - ERROR [LearnerHandler-/127.0.0.1:50808:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.io.EOFException: null
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:33:52,435 [myid:] - ERROR [LearnerHandler-/127.0.0.1:52990:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.io.EOFException: null
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:33:53,435 [myid:] - ERROR [LearnerHandler-/127.0.0.1:52968:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.io.EOFException: null
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:34:03,960 [myid:] - ERROR [LearnerHandler-/127.0.0.1:52982:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.net.SocketException: Socket closed
+	at java.net.SocketInputStream.read(SocketInputStream.java:204)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:34:03,974 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testBulkReconfig() is finished
+2023-09-18 23:34:03,975 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:34:03,976 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:34:03,976 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testJMXBeanAfterRoleChange() is started
+2023-09-18 23:34:04,301 [myid:] - ERROR [LearnerHandler-/127.0.0.1:39444:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.io.EOFException: null
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:34:07,252 [myid:] - ERROR [LearnerHandler-/127.0.0.1:39448:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.io.EOFException: null
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:34:07,252 [myid:] - ERROR [LearnerHandler-/127.0.0.1:39436:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.io.EOFException: null
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:34:07,264 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testJMXBeanAfterRoleChange() is finished
+2023-09-18 23:34:07,265 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:34:07,267 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:34:07,267 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testRemoveOneAsynchronous() is started
+2023-09-18 23:34:08,883 [myid:] - ERROR [LearnerHandler-/127.0.0.1:60464:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.io.EOFException: null
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:34:08,887 [myid:] - ERROR [LearnerHandler-/127.0.0.1:60484:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.io.EOFException: null
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:34:08,895 [myid:] - ERROR [LearnerHandler-/127.0.0.1:60478:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.io.EOFException: null
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:34:08,898 [myid:] - ERROR [LearnerHandler-/127.0.0.1:60466:o.a.z.s.q.LearnerHandler@720] - Unexpected exception in LearnerHandler: 
+java.io.EOFException: null
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:96)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:86)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:134)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:657)
+2023-09-18 23:34:08,914 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testRemoveOneAsynchronous() is finished
+2023-09-18 23:34:08,915 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]

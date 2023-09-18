@@ -30,7 +30,9 @@ import java.net.InetSocketAddress;
 import java.net.Socket;
 import java.nio.ByteBuffer;
 import java.util.ArrayDeque;
+import java.util.ArrayList;
 import java.util.Deque;
+import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
@@ -41,6 +43,8 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicReference;
+import java.util.regex.Pattern;
+
 import javax.net.ssl.SSLSocket;
 import org.apache.jute.BinaryInputArchive;
 import org.apache.jute.BinaryOutputArchive;
@@ -405,8 +409,23 @@ public class Learner {
 
             int remainingTimeout;
             long startNanoTime = nanoTime();
-            LOG.error("[wasabi] Retry Loop 05 is called. MaxRetry : 5");
-            LOG.error("[wasabi] Retry Loop 05 is called. MaxDuration : "+leaderConnectDelayDuringRetryMs);
+                            // Get the current stack trace
+            StackTraceElement[] stackTrace = Thread.currentThread().getStackTrace();
+
+                        // Find all stack trace elements that contain the word 'test'
+            Pattern testStackTracePattern = Pattern.compile(".*test.*", Pattern.CASE_INSENSITIVE);
+            List<StackTraceElement> testStackTraceElements = new ArrayList<>();
+            for (int i = 0; i < stackTrace.length; i++) {
+                if (testStackTracePattern.matcher(stackTrace[i].getClassName()).matches()) {
+                    testStackTraceElements.add(stackTrace[i]);
+                }
+            }
+            // Log all test stack trace elements
+            for (StackTraceElement testStackTraceElement : testStackTraceElements) {
+                LOG.error("[wasabi] Retry Loop 05 is called. MaxRetry : 5"+"  stack trace element: " + testStackTraceElement.getClassName() + "." + testStackTraceElement.getMethodName() + " (Line " + testStackTraceElement.getLineNumber() + ")");
+                LOG.error("[wasabi] Retry Loop 05 is called. MaxDuration : "+leaderConnectDelayDuringRetryMs+"  stack trace element: " + testStackTraceElement.getClassName() + "." + testStackTraceElement.getMethodName() + " (Line " + testStackTraceElement.getLineNumber() + ")");
+            }
+
             for (int tries = 0; tries < 5 && socket.get() == null; tries++) {
                 try {
                     // recalculate the init limit time because  sleep for 1000 milliseconds

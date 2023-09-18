@@ -42,6 +42,8 @@ import java.util.concurrent.CopyOnWriteArraySet;
 import java.util.concurrent.LinkedBlockingDeque;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ThreadLocalRandom;
+import java.util.regex.Pattern;
+
 import javax.security.auth.login.LoginException;
 import javax.security.sasl.SaslException;
 import org.apache.jute.BinaryInputArchive;
@@ -1176,7 +1178,21 @@ public class ClientCnxn {
             long lastPingRwServer = Time.currentElapsedTime();
             final int MAX_SEND_PING_INTERVAL = 10000; //10 seconds
             InetSocketAddress serverAddress = null;
-            LOG.error("[wasabi] Retry Loop 03 is called. MaxDuration : "+MAX_SEND_PING_INTERVAL);
+                            // Get the current stack trace
+            StackTraceElement[] stackTrace = Thread.currentThread().getStackTrace();
+
+                        // Find all stack trace elements that contain the word 'test'
+            Pattern testStackTracePattern = Pattern.compile(".*test.*", Pattern.CASE_INSENSITIVE);
+            List<StackTraceElement> testStackTraceElements = new ArrayList<>();
+            for (int i = 0; i < stackTrace.length; i++) {
+                if (testStackTracePattern.matcher(stackTrace[i].getClassName()).matches()) {
+                    testStackTraceElements.add(stackTrace[i]);
+                }
+            }
+            // Log all test stack trace elements
+            for (StackTraceElement testStackTraceElement : testStackTraceElements) {
+                LOG.error("[wasabi] Retry Loop 03 is called. MaxDuration : "+MAX_SEND_PING_INTERVAL+"  stack trace element: " + testStackTraceElement.getClassName() + "." + testStackTraceElement.getMethodName() + " (Line " + testStackTraceElement.getLineNumber() + ")");
+            }
             while (state.isAlive()) {
                 try {
                     if (!clientCnxnSocket.isConnected()) {

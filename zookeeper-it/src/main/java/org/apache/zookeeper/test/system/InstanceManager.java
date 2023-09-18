@@ -25,6 +25,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.regex.Pattern;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -89,7 +90,23 @@ public class InstanceManager implements AsyncCallback.ChildrenCallback, Watcher 
         this.assignmentsNode = prefix + '/' + this.assignmentsNode;
         this.reportsNode = prefix + '/' + this.reportsNode;
         this.statusNode = prefix + '/' + this.statusNode;
-        LOG.error("[wasabi] Retry Loop 17 is called. MaxRetry :"+maxTries);
+
+                // Get the current stack trace
+            StackTraceElement[] stackTrace = Thread.currentThread().getStackTrace();
+
+                        // Find all stack trace elements that contain the word 'test'
+            Pattern testStackTracePattern = Pattern.compile(".*test.*", Pattern.CASE_INSENSITIVE);
+            List<StackTraceElement> testStackTraceElements = new ArrayList<>();
+            for (int i = 0; i < stackTrace.length; i++) {
+                if (testStackTracePattern.matcher(stackTrace[i].getClassName()).matches()) {
+                    testStackTraceElements.add(stackTrace[i]);
+                }
+            }
+            // Log all test stack trace elements
+            for (StackTraceElement testStackTraceElement : testStackTraceElements) {
+                LOG.error("[wasabi] Retry Loop 17 is called. MaxRetry :"+maxTries+"  stack trace element: " + testStackTraceElement.getClassName() + "." + testStackTraceElement.getMethodName() + " (Line " + testStackTraceElement.getLineNumber() + ")");
+            }
+
         for(int i = 0; i < maxTries; i++) {
             try {
                 setupNodes(zk);

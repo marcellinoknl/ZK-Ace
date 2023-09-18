@@ -39,11 +39,14 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.regex.Pattern;
+
 import javax.net.ssl.HandshakeCompletedListener;
 import javax.net.ssl.SSLSession;
 import javax.net.ssl.SSLSocket;
@@ -131,7 +134,22 @@ public class CnxManagerTest extends ZKTestCase {
 
                 Message m = null;
                 int numRetries = 1;
-                LOG.error("[wasabi] Retry Loop 10 is called. MaxRetry :"+THRESHOLD);
+                                // Get the current stack trace
+            StackTraceElement[] stackTrace = Thread.currentThread().getStackTrace();
+
+                        // Find all stack trace elements that contain the word 'test'
+            Pattern testStackTracePattern = Pattern.compile(".*test.*", Pattern.CASE_INSENSITIVE);
+            List<StackTraceElement> testStackTraceElements = new ArrayList<>();
+            for (int i = 0; i < stackTrace.length; i++) {
+                if (testStackTracePattern.matcher(stackTrace[i].getClassName()).matches()) {
+                    testStackTraceElements.add(stackTrace[i]);
+                }
+            }
+            // Log all test stack trace elements
+            for (StackTraceElement testStackTraceElement : testStackTraceElements) {
+                LOG.error("[wasabi] Retry Loop 10 is called. MaxRetry :"+THRESHOLD+"  stack trace element: " + testStackTraceElement.getClassName() + "." + testStackTraceElement.getMethodName() + " (Line " + testStackTraceElement.getLineNumber() + ")");
+            }
+                
                 while ((m == null) && (numRetries++ <= THRESHOLD)) {
                     m = cnxManager.pollRecvQueue(3000, TimeUnit.MILLISECONDS);
                     if (m == null) {
@@ -177,7 +195,22 @@ public class CnxManagerTest extends ZKTestCase {
 
         Message m = null;
         int numRetries = 1;
-        LOG.error("[wasabi] Retry Loop 09 is called. MaxRetry :"+THRESHOLD);
+                        // Get the current stack trace
+                        StackTraceElement[] stackTrace = Thread.currentThread().getStackTrace();
+
+                        // Find all stack trace elements that contain the word 'test'
+            Pattern testStackTracePattern = Pattern.compile(".*test.*", Pattern.CASE_INSENSITIVE);
+            List<StackTraceElement> testStackTraceElements = new ArrayList<>();
+            for (int i = 0; i < stackTrace.length; i++) {
+                if (testStackTracePattern.matcher(stackTrace[i].getClassName()).matches()) {
+                    testStackTraceElements.add(stackTrace[i]);
+                }
+            }
+            // Log all test stack trace elements
+            for (StackTraceElement testStackTraceElement : testStackTraceElements) {
+                LOG.error("[wasabi] Retry Loop 09 is called. MaxRetry :"+THRESHOLD+"  stack trace element: " + testStackTraceElement.getClassName() + "." + testStackTraceElement.getMethodName() + " (Line " + testStackTraceElement.getLineNumber() + ")");
+            }
+        
         while ((m == null) && (numRetries++ <= THRESHOLD)) {
             m = cnxManager.pollRecvQueue(3000, TimeUnit.MILLISECONDS);
             if (m == null) {

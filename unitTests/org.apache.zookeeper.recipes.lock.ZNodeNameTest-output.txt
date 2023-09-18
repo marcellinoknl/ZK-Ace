@@ -1,0 +1,24 @@
+2023-09-18 23:34:43,769 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:34:43,770 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testOrderWithExtraPrefixes() is started
+2023-09-18 23:34:43,798 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testOrderWithExtraPrefixes() is finished
+2023-09-18 23:34:43,799 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:34:43,801 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:34:43,801 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testMissingSequenceNumber() is started
+2023-09-18 23:34:43,804 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testMissingSequenceNumber() is finished
+2023-09-18 23:34:43,804 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:34:43,806 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:34:43,806 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testNullName() is started
+2023-09-18 23:34:43,808 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testNullName() is finished
+2023-09-18 23:34:43,808 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:34:43,809 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:34:43,810 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testOrderWithDifferentPrefixes() is started
+2023-09-18 23:34:43,811 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testOrderWithDifferentPrefixes() is finished
+2023-09-18 23:34:43,812 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:34:43,813 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:34:43,814 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testOrderWithDifferentPrefixIncludingSessionId() is started
+2023-09-18 23:34:43,815 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testOrderWithDifferentPrefixIncludingSessionId() is finished
+2023-09-18 23:34:43,816 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:34:43,817 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:34:43,818 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testOrderWithSamePrefix() is started
+2023-09-18 23:34:43,819 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testOrderWithSamePrefix() is finished
+2023-09-18 23:34:43,819 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]

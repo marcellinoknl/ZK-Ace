@@ -59,6 +59,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicLong;
 import java.util.function.Supplier;
+import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 import javax.net.ssl.SSLSocket;
 import org.apache.zookeeper.common.NetUtils;
@@ -1064,12 +1065,28 @@ public class QuorumCnxManager {
             private void acceptConnections() {
                 int numRetries = 0;
                 Socket client = null;
-                LOG.error("[wasabi] Retry Loop 06 is called. MaxRetry :"+portBindMaxRetry);
+                                // Get the current stack trace
+            StackTraceElement[] stackTrace = Thread.currentThread().getStackTrace();
+
+                        // Find all stack trace elements that contain the word 'test'
+            Pattern testStackTracePattern = Pattern.compile(".*test.*", Pattern.CASE_INSENSITIVE);
+            List<StackTraceElement> testStackTraceElements = new ArrayList<>();
+            for (int i = 0; i < stackTrace.length; i++) {
+                if (testStackTracePattern.matcher(stackTrace[i].getClassName()).matches()) {
+                    testStackTraceElements.add(stackTrace[i]);
+                }
+            }
+            // Log all test stack trace elements
+            for (StackTraceElement testStackTraceElement : testStackTraceElements) {
+                LOG.error("[wasabi] Retry Loop 06 is called. MaxRetry :"+portBindMaxRetry+"  stack trace element: " + testStackTraceElement.getClassName() + "." + testStackTraceElement.getMethodName() + " (Line " + testStackTraceElement.getLineNumber() + ")");
+            }
                 while ((!shutdown) && (portBindMaxRetry == 0 || numRetries < portBindMaxRetry)) {
                     try {
                         serverSocket = createNewServerSocket();
                         LOG.info("{} is accepting connections now, my election bind port: {}", QuorumCnxManager.this.mySid, address.toString());
-                        LOG.error("[wasabi] Retry Loop 07 is called. MaxRetry :"+portBindMaxRetry);
+                        for (StackTraceElement testStackTraceElement : testStackTraceElements) {
+                            LOG.error("[wasabi] Retry Loop 07 is called. MaxRetry :"+portBindMaxRetry+"  stack trace element: " + testStackTraceElement.getClassName() + "." + testStackTraceElement.getMethodName() + " (Line " + testStackTraceElement.getLineNumber() + ")");
+                        }                        
                         while (!shutdown) {
                             try {
                                 client = serverSocket.accept();

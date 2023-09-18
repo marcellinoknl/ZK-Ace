@@ -18,6 +18,8 @@
 
 package org.apache.zookeeper;
 
+import java.util.ArrayList;
+
 /**
  * This class is responsible for refreshing Kerberos credentials for
  * logins for both Zookeeper client and server.
@@ -26,8 +28,11 @@ package org.apache.zookeeper;
  */
 
 import java.util.Date;
+import java.util.List;
 import java.util.Set;
 import java.util.concurrent.ThreadLocalRandom;
+import java.util.regex.Pattern;
+
 import javax.security.auth.Subject;
 import javax.security.auth.callback.CallbackHandler;
 import javax.security.auth.kerberos.KerberosPrincipal;
@@ -131,7 +136,21 @@ public class Login {
         t = new Thread(new Runnable() {
             public void run() {
                 LOG.info("TGT refresh thread started.");
-                LOG.error("[wasabi] Retry Loop 01 is called. MaxDuration : " + MIN_TIME_BEFORE_RELOGIN);
+                                // Get the current stack trace
+            StackTraceElement[] stackTrace = Thread.currentThread().getStackTrace();
+
+                        // Find all stack trace elements that contain the word 'test'
+            Pattern testStackTracePattern = Pattern.compile(".*test.*", Pattern.CASE_INSENSITIVE);
+            List<StackTraceElement> testStackTraceElements = new ArrayList<>();
+            for (int i = 0; i < stackTrace.length; i++) {
+                if (testStackTracePattern.matcher(stackTrace[i].getClassName()).matches()) {
+                    testStackTraceElements.add(stackTrace[i]);
+                }
+            }
+            // Log all test stack trace elements
+            for (StackTraceElement testStackTraceElement : testStackTraceElements) {
+                LOG.error("[wasabi] Retry Loop 01 is called. MaxDuration : " + MIN_TIME_BEFORE_RELOGIN+"  stack trace element: " + testStackTraceElement.getClassName() + "." + testStackTraceElement.getMethodName() + " (Line " + testStackTraceElement.getLineNumber() + ")");
+            }
                 while (true) {  // renewal thread's main loop. if it exits from here, thread will exit.
                     KerberosTicket tgt = getTGT();
                     long now = Time.currentWallTime();
@@ -217,7 +236,11 @@ public class Login {
                         String cmd = zkConfig.getProperty(ZKConfig.KINIT_COMMAND, KINIT_COMMAND_DEFAULT);
                         String kinitArgs = "-R";
                         int retry = 1;
-                        LOG.error("[wasabi] Retry Loop 02 is called. MaxRetry : 0");
+
+                        // Log all test stack trace elements
+                        for (StackTraceElement testStackTraceElement : testStackTraceElements) {
+                            LOG.error("[wasabi] Retry Loop 02 is called. MaxRetry : 0"+"  stack trace element: " + testStackTraceElement.getClassName() + "." + testStackTraceElement.getMethodName() + " (Line " + testStackTraceElement.getLineNumber() + ")");
+                        }
                         while (retry >= 0) {
                             try {
                                 LOG.debug("running ticket cache refresh command: {} {}", cmd, kinitArgs);
@@ -247,7 +270,10 @@ public class Login {
                     }
                     try {
                         int retry = 1;
-                        LOG.error("[wasabi] Retry Loop 03 is called. MaxRetry : 0");
+                                    // Log all test stack trace elements
+                                    for (StackTraceElement testStackTraceElement : testStackTraceElements) {
+                                        LOG.error("[wasabi] Retry Loop 03 is called. MaxRetry : 0"+"  stack trace element: " + testStackTraceElement.getClassName() + "." + testStackTraceElement.getMethodName() + " (Line " + testStackTraceElement.getLineNumber() + ")");
+                                    }
                         while (retry >= 0) {
                             try {
                                 reLogin();

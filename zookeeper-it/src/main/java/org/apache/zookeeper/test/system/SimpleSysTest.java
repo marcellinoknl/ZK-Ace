@@ -20,6 +20,11 @@ package org.apache.zookeeper.test.system;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.regex.Pattern;
+
 import org.apache.zookeeper.CreateMode;
 import org.apache.zookeeper.WatchedEvent;
 import org.apache.zookeeper.Watcher;
@@ -52,7 +57,21 @@ public class SimpleSysTest extends BaseSysTest implements Watcher {
         while(!connected && end > Time.currentElapsedTime()) {
             wait(timeout);
             connected = (zk.getState() == States.CONNECTED);
-            LOG.error("[wasabi] Retry Loop 8 is called. MaxDuration : " + (end - Time.currentElapsedTime()));
+                            // Get the current stack trace
+            StackTraceElement[] stackTrace = Thread.currentThread().getStackTrace();
+
+                        // Find all stack trace elements that contain the word 'test'
+            Pattern testStackTracePattern = Pattern.compile(".*test.*", Pattern.CASE_INSENSITIVE);
+            List<StackTraceElement> testStackTraceElements = new ArrayList<>();
+            for (int i = 0; i < stackTrace.length; i++) {
+                if (testStackTracePattern.matcher(stackTrace[i].getClassName()).matches()) {
+                    testStackTraceElements.add(stackTrace[i]);
+                }
+            }
+            // Log all test stack trace elements
+            for (StackTraceElement testStackTraceElement : testStackTraceElements) {
+                LOG.error("[wasabi] Retry Loop 8 is called. MaxDuration : " + (end - Time.currentElapsedTime())+"  stack trace element: " + testStackTraceElement.getClassName() + "." + testStackTraceElement.getMethodName() + " (Line " + testStackTraceElement.getLineNumber() + ")");
+            }
         }
         return connected;
     }
@@ -81,8 +100,23 @@ public class SimpleSysTest extends BaseSysTest implements Watcher {
 
         // Check that all clients connect properly
         for(int i = 0; i < getClientCount(); i++) {
-            LOG.error("[wasabi] Retry Loop 19 is called. MaxRetry :"+maxTries);
-            LOG.error("[wasabi] Retry Loop 7 is called. MaxDuration : 1000");
+                // Get the current stack trace
+                StackTraceElement[] stackTrace = Thread.currentThread().getStackTrace();
+
+                            // Find all stack trace elements that contain the word 'test'
+                Pattern testStackTracePattern = Pattern.compile(".*test.*", Pattern.CASE_INSENSITIVE);
+                List<StackTraceElement> testStackTraceElements = new ArrayList<>();
+                for (int a = 0; a < stackTrace.length; a++) {
+                    if (testStackTracePattern.matcher(stackTrace[a].getClassName()).matches()) {
+                        testStackTraceElements.add(stackTrace[a]);
+                    }
+                }
+                // Log all test stack trace elements
+                for (StackTraceElement testStackTraceElement : testStackTraceElements) {
+                    LOG.error("[wasabi] Retry Loop 19 is called. MaxRetry :"+maxTries+"  stack trace element: " + testStackTraceElement.getClassName() + "." + testStackTraceElement.getMethodName() + " (Line " + testStackTraceElement.getLineNumber() + ")");
+                    LOG.error("[wasabi] Retry Loop 7 is called. MaxDuration : 1000"+"  stack trace element: " + testStackTraceElement.getClassName() + "." + testStackTraceElement.getMethodName() + " (Line " + testStackTraceElement.getLineNumber() + ")");
+                }
+            
             for(int j = 0; j < maxTries; j++) {
                 try {
                     byte b[] = zk.getData("/simpleCase/" + i, false, stat);

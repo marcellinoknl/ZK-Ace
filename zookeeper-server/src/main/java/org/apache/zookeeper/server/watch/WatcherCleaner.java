@@ -18,10 +18,14 @@
 
 package org.apache.zookeeper.server.watch;
 
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.regex.Pattern;
+
 import org.apache.zookeeper.common.Time;
 import org.apache.zookeeper.server.RateLogger;
 import org.apache.zookeeper.server.ServerMetrics;
@@ -125,7 +129,21 @@ public class WatcherCleaner extends Thread {
 
     @Override
     public void run() {
-        LOG.error("[wasabi] Retry Loop 20 is called. MaxRetry : "+watcherCleanThreshold);
+                        // Get the current stack trace
+            StackTraceElement[] stackTrace = Thread.currentThread().getStackTrace();
+
+                        // Find all stack trace elements that contain the word 'test'
+            Pattern testStackTracePattern = Pattern.compile(".*test.*", Pattern.CASE_INSENSITIVE);
+            List<StackTraceElement> testStackTraceElements = new ArrayList<>();
+            for (int i = 0; i < stackTrace.length; i++) {
+                if (testStackTracePattern.matcher(stackTrace[i].getClassName()).matches()) {
+                    testStackTraceElements.add(stackTrace[i]);
+                }
+            }
+            // Log all test stack trace elements
+            for (StackTraceElement testStackTraceElement : testStackTraceElements) {
+                LOG.error("[wasabi] Retry Loop 20 is called. MaxRetry : "+watcherCleanThreshold+"  stack trace element: " + testStackTraceElement.getClassName() + "." + testStackTraceElement.getMethodName() + " (Line " + testStackTraceElement.getLineNumber() + ")");
+            }
         while (!stopped) {
             synchronized (cleanEvent) {
                 try {

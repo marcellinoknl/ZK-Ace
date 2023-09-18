@@ -1,0 +1,270 @@
+# Created at 2023-09-18T23:28:21.052
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '23:28:'.
+
+# Created at 2023-09-18T23:28:21.053
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '21.049 [main] ERROR org.wasabi.logger.WasabiListener5 - Creation of WasabiListener5'.
+
+# Created at 2023-09-18T23:28:21.215
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '23:28:'.
+
+# Created at 2023-09-18T23:28:21.216
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '21.215 [main] ERROR org.wasabi.logger.WasabiListener5 - [WASABISTART]'.
+
+# Created at 2023-09-18T23:28:21.216
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '23:28:'.
+
+# Created at 2023-09-18T23:28:21.216
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '21.215 [main] ERROR org.wasabi.logger.WasabiListener5 - [wasabi] testInt() is started'.
+
+# Created at 2023-09-18T23:28:21.236
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '23:28:'.
+
+# Created at 2023-09-18T23:28:21.237
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '21.236 [main] ERROR org.wasabi.logger.WasabiListener5 - [wasabi] testInt() is finished'.
+
+# Created at 2023-09-18T23:28:21.237
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '23:28:'.
+
+# Created at 2023-09-18T23:28:21.237
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '21.236 [main] ERROR org.wasabi.logger.WasabiListener5 - [WASABIEND]'.
+
+# Created at 2023-09-18T23:28:21.238
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '23:28:'.
+
+# Created at 2023-09-18T23:28:21.238
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '21.238 [main] ERROR org.wasabi.logger.WasabiListener5 - [WASABISTART]'.
+
+# Created at 2023-09-18T23:28:21.239
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '23:28:'.
+
+# Created at 2023-09-18T23:28:21.239
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '21.238 [main] ERROR org.wasabi.logger.WasabiListener5 - [wasabi] testFloat() is started'.
+
+# Created at 2023-09-18T23:28:21.241
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '23:28:'.
+
+# Created at 2023-09-18T23:28:21.241
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '21.240 [main] ERROR org.wasabi.logger.WasabiListener5 - [wasabi] testFloat() is finished'.
+
+# Created at 2023-09-18T23:28:21.241
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '23:28:'.
+
+# Created at 2023-09-18T23:28:21.241
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '21.241 [main] ERROR org.wasabi.logger.WasabiListener5 - [WASABIEND]'.
+
+# Created at 2023-09-18T23:28:21.242
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '23:28:'.
+
+# Created at 2023-09-18T23:28:21.242
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '21.241 [main] ERROR org.wasabi.logger.WasabiListener5 - [WASABISTART]'.
+
+# Created at 2023-09-18T23:28:21.242
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '23:28:'.
+
+# Created at 2023-09-18T23:28:21.242
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '21.242 [main] ERROR org.wasabi.logger.WasabiListener5 - [wasabi] testBool() is started'.
+
+# Created at 2023-09-18T23:28:21.244
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '23:28:'.
+
+# Created at 2023-09-18T23:28:21.244
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '21.244 [main] ERROR org.wasabi.logger.WasabiListener5 - [wasabi] testBool() is finished'.
+
+# Created at 2023-09-18T23:28:21.245
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '23:28:'.
+
+# Created at 2023-09-18T23:28:21.245
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '21.244 [main] ERROR org.wasabi.logger.WasabiListener5 - [WASABIEND]'.
+
+# Created at 2023-09-18T23:28:21.245
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '23:28:'.
+
+# Created at 2023-09-18T23:28:21.245
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '21.245 [main] ERROR org.wasabi.logger.WasabiListener5 - [WASABISTART]'.
+
+# Created at 2023-09-18T23:28:21.246
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '23:28:'.
+
+# Created at 2023-09-18T23:28:21.246
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '21.245 [main] ERROR org.wasabi.logger.WasabiListener5 - [wasabi] testReadStringCheckLength() is started'.
+
+# Created at 2023-09-18T23:28:21.247
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '23:28:'.
+
+# Created at 2023-09-18T23:28:21.247
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '21.247 [main] ERROR org.wasabi.logger.WasabiListener5 - [wasabi] testReadStringCheckLength() is finished'.
+
+# Created at 2023-09-18T23:28:21.247
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '23:28:'.
+
+# Created at 2023-09-18T23:28:21.247
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '21.247 [main] ERROR org.wasabi.logger.WasabiListener5 - [WASABIEND]'.
+
+# Created at 2023-09-18T23:28:21.248
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '23:28:'.
+
+# Created at 2023-09-18T23:28:21.248
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '21.248 [main] ERROR org.wasabi.logger.WasabiListener5 - [WASABISTART]'.
+
+# Created at 2023-09-18T23:28:21.249
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '23:28:'.
+
+# Created at 2023-09-18T23:28:21.249
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '21.248 [main] ERROR org.wasabi.logger.WasabiListener5 - [wasabi] testReadStringForRecordsHavingLengthMoreThanMaxAllowedSize() is started'.
+
+# Created at 2023-09-18T23:28:21.250
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '23:28:'.
+
+# Created at 2023-09-18T23:28:21.250
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '21.250 [main] ERROR org.wasabi.logger.WasabiListener5 - [wasabi] testReadStringForRecordsHavingLengthMoreThanMaxAllowedSize() is finished'.
+
+# Created at 2023-09-18T23:28:21.250
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '23:28:'.
+
+# Created at 2023-09-18T23:28:21.250
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '21.250 [main] ERROR org.wasabi.logger.WasabiListener5 - [WASABIEND]'.
+
+# Created at 2023-09-18T23:28:21.251
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '23:28:'.
+
+# Created at 2023-09-18T23:28:21.251
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '21.251 [main] ERROR org.wasabi.logger.WasabiListener5 - [WASABISTART]'.
+
+# Created at 2023-09-18T23:28:21.251
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '23:28:'.
+
+# Created at 2023-09-18T23:28:21.252
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '21.251 [main] ERROR org.wasabi.logger.WasabiListener5 - [wasabi] testBuffer() is started'.
+
+# Created at 2023-09-18T23:28:21.254
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '23:28:'.
+
+# Created at 2023-09-18T23:28:21.254
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '21.253 [main] ERROR org.wasabi.logger.WasabiListener5 - [wasabi] testBuffer() is finished'.
+
+# Created at 2023-09-18T23:28:21.254
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '23:28:'.
+
+# Created at 2023-09-18T23:28:21.254
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '21.254 [main] ERROR org.wasabi.logger.WasabiListener5 - [WASABIEND]'.
+
+# Created at 2023-09-18T23:28:21.255
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '23:28:'.
+
+# Created at 2023-09-18T23:28:21.255
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '21.254 [main] ERROR org.wasabi.logger.WasabiListener5 - [WASABISTART]'.
+
+# Created at 2023-09-18T23:28:21.255
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '23:28:'.
+
+# Created at 2023-09-18T23:28:21.255
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '21.255 [main] ERROR org.wasabi.logger.WasabiListener5 - [wasabi] testDouble() is started'.
+
+# Created at 2023-09-18T23:28:21.256
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '23:28:'.
+
+# Created at 2023-09-18T23:28:21.256
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '21.256 [main] ERROR org.wasabi.logger.WasabiListener5 - [wasabi] testDouble() is finished'.
+
+# Created at 2023-09-18T23:28:21.256
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '23:28:'.
+
+# Created at 2023-09-18T23:28:21.256
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '21.256 [main] ERROR org.wasabi.logger.WasabiListener5 - [WASABIEND]'.
+
+# Created at 2023-09-18T23:28:21.257
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '23:28:'.
+
+# Created at 2023-09-18T23:28:21.257
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '21.256 [main] ERROR org.wasabi.logger.WasabiListener5 - [WASABISTART]'.
+
+# Created at 2023-09-18T23:28:21.257
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '23:28:'.
+
+# Created at 2023-09-18T23:28:21.257
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '21.257 [main] ERROR org.wasabi.logger.WasabiListener5 - [wasabi] testReadStringForRecordsHavingLengthLessThanMaxAllowedSize() is started'.
+
+# Created at 2023-09-18T23:28:21.258
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '23:28:'.
+
+# Created at 2023-09-18T23:28:21.258
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '21.258 [main] ERROR org.wasabi.logger.WasabiListener5 - [wasabi] testReadStringForRecordsHavingLengthLessThanMaxAllowedSize() is finished'.
+
+# Created at 2023-09-18T23:28:21.258
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '23:28:'.
+
+# Created at 2023-09-18T23:28:21.258
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '21.258 [main] ERROR org.wasabi.logger.WasabiListener5 - [WASABIEND]'.
+
+# Created at 2023-09-18T23:28:21.259
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '23:28:'.
+
+# Created at 2023-09-18T23:28:21.259
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '21.259 [main] ERROR org.wasabi.logger.WasabiListener5 - [WASABISTART]'.
+
+# Created at 2023-09-18T23:28:21.259
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '23:28:'.
+
+# Created at 2023-09-18T23:28:21.259
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '21.259 [main] ERROR org.wasabi.logger.WasabiListener5 - [wasabi] testString() is started'.
+
+# Created at 2023-09-18T23:28:21.260
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '23:28:'.
+
+# Created at 2023-09-18T23:28:21.260
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '21.260 [main] ERROR org.wasabi.logger.WasabiListener5 - [wasabi] testString() is finished'.
+
+# Created at 2023-09-18T23:28:21.260
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '23:28:'.
+
+# Created at 2023-09-18T23:28:21.261
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '21.260 [main] ERROR org.wasabi.logger.WasabiListener5 - [WASABIEND]'.
+
+# Created at 2023-09-18T23:28:21.269
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '23:28:'.
+
+# Created at 2023-09-18T23:28:21.270
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '21.265 [main] ERROR org.wasabi.logger.WasabiListener5 - [WASABISTART]'.
+
+# Created at 2023-09-18T23:28:21.270
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '23:28:'.
+
+# Created at 2023-09-18T23:28:21.270
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '21.265 [main] ERROR org.wasabi.logger.WasabiListener5 - [wasabi] testDataSize() is started'.
+
+# Created at 2023-09-18T23:28:21.270
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '23:28:'.
+
+# Created at 2023-09-18T23:28:21.270
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '21.267 [main] ERROR org.wasabi.logger.WasabiListener5 - [wasabi] testDataSize() is finished'.
+
+# Created at 2023-09-18T23:28:21.270
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '23:28:'.
+
+# Created at 2023-09-18T23:28:21.270
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '21.267 [main] ERROR org.wasabi.logger.WasabiListener5 - [WASABIEND]'.
+
+# Created at 2023-09-18T23:28:21.273
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '23:28:'.
+
+# Created at 2023-09-18T23:28:21.274
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '21.271 [main] ERROR org.wasabi.logger.WasabiListener5 - [WASABISTART]'.
+
+# Created at 2023-09-18T23:28:21.274
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '23:28:'.
+
+# Created at 2023-09-18T23:28:21.274
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '21.271 [main] ERROR org.wasabi.logger.WasabiListener5 - [wasabi] testDataSize() is started'.
+
+# Created at 2023-09-18T23:28:21.274
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '23:28:'.
+
+# Created at 2023-09-18T23:28:21.274
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '21.273 [main] ERROR org.wasabi.logger.WasabiListener5 - [wasabi] testDataSize() is finished'.
+
+# Created at 2023-09-18T23:28:21.274
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '23:28:'.
+
+# Created at 2023-09-18T23:28:21.275
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '21.273 [main] ERROR org.wasabi.logger.WasabiListener5 - [WASABIEND]'.
+

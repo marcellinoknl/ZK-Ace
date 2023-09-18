@@ -18,8 +18,11 @@
 
 package org.apache.zookeeper.recipes.lock;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.regex.Pattern;
+
 import org.apache.zookeeper.CreateMode;
 import org.apache.zookeeper.KeeperException;
 import org.apache.zookeeper.ZooDefs;
@@ -121,7 +124,21 @@ class ProtocolSupport {
     protected Object retryOperation(ZooKeeperOperation operation)
         throws KeeperException, InterruptedException {
         KeeperException exception = null;
-        LOG.error("[wasabi] Retry Loop 01 is called. MaxRetry : " + RETRY_COUNT);
+                        // Get the current stack trace
+            StackTraceElement[] stackTrace = Thread.currentThread().getStackTrace();
+
+                        // Find all stack trace elements that contain the word 'test'
+            Pattern testStackTracePattern = Pattern.compile(".*test.*", Pattern.CASE_INSENSITIVE);
+            List<StackTraceElement> testStackTraceElements = new ArrayList<>();
+            for (int i = 0; i < stackTrace.length; i++) {
+                if (testStackTracePattern.matcher(stackTrace[i].getClassName()).matches()) {
+                    testStackTraceElements.add(stackTrace[i]);
+                }
+            }
+            // Log all test stack trace elements
+            for (StackTraceElement testStackTraceElement : testStackTraceElements) {
+                LOG.error("[wasabi] Retry Loop 01 is called. MaxRetry : " + RETRY_COUNT+"  stack trace element: " + testStackTraceElement.getClassName() + "." + testStackTraceElement.getMethodName() + " (Line " + testStackTraceElement.getLineNumber() + ")");
+            }
         for (int i = 0; i < RETRY_COUNT; i++) {
             try {
                 return operation.execute();

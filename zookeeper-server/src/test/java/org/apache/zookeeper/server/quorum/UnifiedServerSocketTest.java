@@ -39,6 +39,7 @@ import java.util.Random;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
+import java.util.regex.Pattern;
 import java.util.stream.Stream;
 import javax.net.ssl.HandshakeCompletedEvent;
 import javax.net.ssl.HandshakeCompletedListener;
@@ -211,7 +212,23 @@ public class UnifiedServerSocketTest extends BaseX509ParameterizedTestCase {
     private SSLSocket connectWithSSL() throws IOException, X509Exception, InterruptedException {
         SSLSocket sslSocket = null;
         int retries = 0;
-        LOG.error("[wasabi] Retry Loop 11 is called. MaxRetry :"+MAX_RETRIES);
+
+                        // Get the current stack trace
+            StackTraceElement[] stackTrace = Thread.currentThread().getStackTrace();
+
+                        // Find all stack trace elements that contain the word 'test'
+            Pattern testStackTracePattern = Pattern.compile(".*test.*", Pattern.CASE_INSENSITIVE);
+            List<StackTraceElement> testStackTraceElements = new ArrayList<>();
+            for (int i = 0; i < stackTrace.length; i++) {
+                if (testStackTracePattern.matcher(stackTrace[i].getClassName()).matches()) {
+                    testStackTraceElements.add(stackTrace[i]);
+                }
+            }
+            // Log all test stack trace elements
+            for (StackTraceElement testStackTraceElement : testStackTraceElements) {
+                LOG.error("[wasabi] Retry Loop 11 is called. MaxRetry :"+MAX_RETRIES+"  stack trace element: " + testStackTraceElement.getClassName() + "." + testStackTraceElement.getMethodName() + " (Line " + testStackTraceElement.getLineNumber() + ")");
+            }
+        
         while (retries < MAX_RETRIES) {
             try {
                 sslSocket = x509Util.createSSLSocket();
@@ -243,7 +260,22 @@ public class UnifiedServerSocketTest extends BaseX509ParameterizedTestCase {
     private Socket connectWithoutSSL() throws IOException, InterruptedException {
         Socket socket = null;
         int retries = 0;
-        LOG.error("[wasabi] Retry Loop 12 is called. MaxRetry :"+MAX_RETRIES);
+                        // Get the current stack trace
+                        StackTraceElement[] stackTrace = Thread.currentThread().getStackTrace();
+
+                        // Find all stack trace elements that contain the word 'test'
+            Pattern testStackTracePattern = Pattern.compile(".*test.*", Pattern.CASE_INSENSITIVE);
+            List<StackTraceElement> testStackTraceElements = new ArrayList<>();
+            for (int i = 0; i < stackTrace.length; i++) {
+                if (testStackTracePattern.matcher(stackTrace[i].getClassName()).matches()) {
+                    testStackTraceElements.add(stackTrace[i]);
+                }
+            }
+            // Log all test stack trace elements
+            for (StackTraceElement testStackTraceElement : testStackTraceElements) {
+                 LOG.error("[wasabi] Retry Loop 12 is called. MaxRetry :"+MAX_RETRIES+"  stack trace element: " + testStackTraceElement.getClassName() + "." + testStackTraceElement.getMethodName() + " (Line " + testStackTraceElement.getLineNumber() + ")");
+            }
+       
         while (retries < MAX_RETRIES) {
             try {
                 socket = new Socket();

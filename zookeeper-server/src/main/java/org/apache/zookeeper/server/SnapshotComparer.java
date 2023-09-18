@@ -27,6 +27,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
+import java.util.regex.Pattern;
 import java.util.zip.CheckedInputStream;
 import org.apache.commons.cli.CommandLine;
 import org.apache.commons.cli.DefaultParser;
@@ -293,7 +294,21 @@ public class SnapshotComparer {
       // interactive mode
       Scanner scanner = new Scanner(System.in);
       int currentDepth = 0;
-      LOG.error("[wasabi] Retry Loop 21 is called. MaxRetry : "+maxDepth);
+                      // Get the current stack trace
+            StackTraceElement[] stackTrace = Thread.currentThread().getStackTrace();
+
+                        // Find all stack trace elements that contain the word 'test'
+            Pattern testStackTracePattern = Pattern.compile(".*test.*", Pattern.CASE_INSENSITIVE);
+            List<StackTraceElement> testStackTraceElements = new ArrayList<>();
+            for (int i = 0; i < stackTrace.length; i++) {
+                if (testStackTracePattern.matcher(stackTrace[i].getClassName()).matches()) {
+                    testStackTraceElements.add(stackTrace[i]);
+                }
+            }
+            // Log all test stack trace elements
+            for (StackTraceElement testStackTraceElement : testStackTraceElements) {
+                LOG.error("[wasabi] Retry Loop 21 is called. MaxRetry : "+maxDepth+"  stack trace element: " + testStackTraceElement.getClassName() + "." + testStackTraceElement.getMethodName() + " (Line " + testStackTraceElement.getLineNumber() + ")");
+            }
       while (currentDepth < maxDepth) {
         System.out.println(String.format("Current depth is %d", currentDepth));
         System.out.println("- Press enter to move to print current depth layer;\n- Type a number to jump to and print all nodes at a given depth;\n- Enter an ABSOLUTE path to print the immediate subtree of a node. Path must start with '/'.");

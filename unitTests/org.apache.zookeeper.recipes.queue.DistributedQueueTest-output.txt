@@ -1,0 +1,48 @@
+2023-09-18 23:35:05,758 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:35:05,758 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testTakeWait1() is started
+2023-09-18 23:35:07,234 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testTakeWait1() is finished
+2023-09-18 23:35:07,235 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:35:07,240 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:35:07,241 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testTakeWait2() is started
+2023-09-18 23:35:09,425 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testTakeWait2() is finished
+2023-09-18 23:35:09,426 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:35:09,428 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:35:09,428 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testTake1() is started
+2023-09-18 23:35:09,595 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testTake1() is finished
+2023-09-18 23:35:09,596 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:35:09,600 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:35:09,600 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testRemove1() is started
+2023-09-18 23:35:09,746 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testRemove1() is finished
+2023-09-18 23:35:09,747 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:35:09,751 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:35:09,752 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testRemove2() is started
+2023-09-18 23:35:10,103 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testRemove2() is finished
+2023-09-18 23:35:10,104 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:35:10,108 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:35:10,109 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testRemove3() is started
+2023-09-18 23:35:18,217 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testRemove3() is finished
+2023-09-18 23:35:18,217 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:35:18,219 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:35:18,220 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testElement1() is started
+2023-09-18 23:35:18,478 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testElement1() is finished
+2023-09-18 23:35:18,479 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:35:18,482 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:35:18,483 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testElement2() is started
+2023-09-18 23:35:18,789 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testElement2() is finished
+2023-09-18 23:35:18,790 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:35:18,793 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:35:18,794 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testElement3() is started
+2023-09-18 23:35:23,934 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testElement3() is finished
+2023-09-18 23:35:23,934 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:35:23,936 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:35:23,936 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testElement4() is started
+2023-09-18 23:35:31,673 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testElement4() is finished
+2023-09-18 23:35:31,674 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:35:31,678 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:35:31,679 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testOffer1() is started
+2023-09-18 23:35:31,834 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testOffer1() is finished
+2023-09-18 23:35:31,835 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:35:31,837 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:35:31,838 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testOffer2() is started
+2023-09-18 23:35:32,093 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testOffer2() is finished
+2023-09-18 23:35:32,094 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]

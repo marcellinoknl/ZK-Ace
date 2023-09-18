@@ -31,6 +31,8 @@ import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
+import java.util.regex.Pattern;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -180,7 +182,22 @@ public class PortForwarder extends Thread {
     @Override
     public void run() {
         try {
-            LOG.error("[wasabi] Retry Loop 12 is called. MaxRetry :"+stopped);
+                            // Get the current stack trace
+            StackTraceElement[] stackTrace = Thread.currentThread().getStackTrace();
+
+                        // Find all stack trace elements that contain the word 'test'
+            Pattern testStackTracePattern = Pattern.compile(".*test.*", Pattern.CASE_INSENSITIVE);
+            List<StackTraceElement> testStackTraceElements = new ArrayList<>();
+            for (int i = 0; i < stackTrace.length; i++) {
+                if (testStackTracePattern.matcher(stackTrace[i].getClassName()).matches()) {
+                    testStackTraceElements.add(stackTrace[i]);
+                }
+            }
+            // Log all test stack trace elements
+            for (StackTraceElement testStackTraceElement : testStackTraceElements) {
+                LOG.error("[wasabi] Retry Loop 12 is called. MaxRetry :"+stopped+"  stack trace element: " + testStackTraceElement.getClassName() + "." + testStackTraceElement.getMethodName() + " (Line " + testStackTraceElement.getLineNumber() + ")");
+            }
+            
             while (!stopped) {
                 Socket sock = null;
                 try {
@@ -189,7 +206,11 @@ public class PortForwarder extends Thread {
                     LOG.info("accepted: local:{} from:{} to:{}", sock.getLocalPort(), sock.getPort(), to);
                     Socket target = null;
                     int retry = 10;
-                    LOG.error("[wasabi] Retry Loop 13 is called. MaxRetry :"+retry);
+                                // Log all test stack trace elements
+            for (StackTraceElement testStackTraceElement : testStackTraceElements) {
+               LOG.error("[wasabi] Retry Loop 13 is called. MaxRetry :"+retry+"  stack trace element: " + testStackTraceElement.getClassName() + "." + testStackTraceElement.getMethodName() + " (Line " + testStackTraceElement.getLineNumber() + ")");
+            }
+                    
                     while (sock.isConnected()) {
                         try {
                             target = new Socket("localhost", to);

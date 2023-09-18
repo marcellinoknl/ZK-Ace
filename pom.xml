@@ -558,13 +558,13 @@
 
     <surefire-forkcount>8</surefire-forkcount>
     <redirectTestOutputToFile>true</redirectTestOutputToFile>
-
+  <surefire.privileged>true</surefire.privileged>
     <!-- dependency versions -->
     <slf4j.version>1.7.30</slf4j.version>
     <logback-version>1.2.10</logback-version>
     <audience-annotations.version>0.12.0</audience-annotations.version>
     <jmockit.version>1.48</jmockit.version>
-    <junit.version>5.6.2</junit.version>
+    <junit.version>5.7.2</junit.version>
     <junit-platform.version>1.6.2</junit-platform.version>
     <mockito.version>4.9.0</mockito.version>
     <hamcrest.version>2.2</hamcrest.version>
@@ -591,7 +591,13 @@
     <c-client-sasl>yes</c-client-sasl>
 
   </properties>
-
+  <dependencies>
+      <dependency>
+      <groupId>org.wasabi.logger</groupId>
+      <artifactId>logger-project</artifactId>
+      <version>1.0-SNAPSHOT</version>
+      </dependency>
+  </dependencies>
   <dependencyManagement>
     <dependencies>
       <dependency>
@@ -599,11 +605,6 @@
         <artifactId>hamcrest-library</artifactId>
         <version>${hamcrest.version}</version>
       </dependency>
-      <dependency>
-      <groupId>org.wasabi.logger</groupId>
-      <artifactId>logger-project</artifactId>
-      <version>1.0-SNAPSHOT</version>
-    </dependency>
       <dependency>
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-collections4</artifactId>
@@ -692,15 +693,23 @@
         <version>${jmockit.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.junit.jupiter</groupId>
-        <artifactId>junit-jupiter-api</artifactId>
-        <version>${junit.version}</version>
+          <groupId>org.junit.jupiter</groupId>
+          <artifactId>junit-jupiter-api</artifactId>
+          <version>${junit.version}</version>
+          <scope>test</scope>
       </dependency>
       <dependency>
-        <groupId>org.junit.jupiter</groupId>
-        <artifactId>junit-jupiter-engine</artifactId>
-        <version>${junit.version}</version>
+          <groupId>org.junit.jupiter</groupId>
+          <artifactId>junit-jupiter-engine</artifactId>
+          <version>${junit.version}</version>
+          <scope>test</scope>
       </dependency>
+      <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>4.13.2</version> <!-- This version is specific to JUnit 4 -->
+        <scope>test</scope>
+    </dependency>
       <dependency>
         <groupId>org.junit.jupiter</groupId>
         <artifactId>junit-jupiter-params</artifactId>
@@ -720,9 +729,10 @@
         <scope>test</scope>
       </dependency>
       <dependency>
-        <groupId>org.junit.vintage</groupId>
-        <artifactId>junit-vintage-engine</artifactId>
-        <version>${junit.version}</version>
+          <groupId>org.junit.vintage</groupId>
+          <artifactId>junit-vintage-engine</artifactId>
+          <version>${junit.version}</version>
+          <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.mockito</groupId>
@@ -855,13 +865,14 @@
           <version>1.11.2</version>
         </plugin>
         <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-surefire-plugin</artifactId>
-          <configuration>
-              <trimStackTrace>false</trimStackTrace>
-              <redirectTestOutputToFile>${redirectTestOutputToFile}</redirectTestOutputToFile>
-              <argLine>-Xmx1024m</argLine>
-          </configuration>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>3.0.0-M5</version>
+            <configuration>
+                <trimStackTrace>false</trimStackTrace>
+                <redirectTestOutputToFile>${redirectTestOutputToFile}</redirectTestOutputToFile>
+                <argLine>-Xmx1024m</argLine>
+            </configuration>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -871,11 +882,11 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-dependency-plugin</artifactId>
         </plugin>
-        <plugin>
+        <!-- <plugin>
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>exec-maven-plugin</artifactId>
           <version>1.6.0</version>
-        </plugin>
+        </plugin> -->
         <plugin>
           <groupId>com.github.koraktor</groupId>
           <artifactId>mavanagaiata</artifactId>

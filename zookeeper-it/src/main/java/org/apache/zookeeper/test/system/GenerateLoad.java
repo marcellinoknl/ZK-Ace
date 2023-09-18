@@ -36,9 +36,11 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Map;
 import java.util.Random;
 import java.util.Set;
+import java.util.regex.Pattern;
 
 import org.apache.zookeeper.server.ExitCode;
 import org.slf4j.Logger;
@@ -205,7 +207,22 @@ public class GenerateLoad {
                 long max = 0;
                 long total = 0;
                 int number = 0;
-                LOG.error("[wasabi] Retry Loop 04 is called. MaxDuration : "+currentInterval/INTERVAL);
+
+                // Get the current stack trace
+            StackTraceElement[] stackTrace = Thread.currentThread().getStackTrace();
+
+                        // Find all stack trace elements that contain the word 'test'
+            Pattern testStackTracePattern = Pattern.compile(".*test.*", Pattern.CASE_INSENSITIVE);
+            List<StackTraceElement> testStackTraceElements = new ArrayList<>();
+            for (int i = 0; i < stackTrace.length; i++) {
+                if (testStackTracePattern.matcher(stackTrace[i].getClassName()).matches()) {
+                    testStackTraceElements.add(stackTrace[i]);
+                }
+            }
+            // Log all test stack trace elements
+            for (StackTraceElement testStackTraceElement : testStackTraceElements) {
+                LOG.error("[wasabi] Retry Loop 04 is called. MaxDuration : "+currentInterval/INTERVAL+"  stack trace element: " + testStackTraceElement.getClassName() + "." + testStackTraceElement.getMethodName() + " (Line " + testStackTraceElement.getLineNumber() + ")");
+            }
                 while (true) {
                     long now = Time.currentElapsedTime();
                     long lastInterval = currentInterval;

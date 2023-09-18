@@ -1,0 +1,76 @@
+2023-09-18 23:34:11,986 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:34:11,987 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testNode() is started
+2023-09-18 23:34:15,394 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testNode() is finished
+2023-09-18 23:34:15,395 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:34:15,400 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:34:15,401 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testOfferShuffle() is started
+2023-09-18 23:34:25,594 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testOfferShuffle() is finished
+2023-09-18 23:34:25,595 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:34:25,599 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:34:25,600 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testReadyOffer() is started
+2023-09-18 23:34:25,796 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testReadyOffer() is finished
+2023-09-18 23:34:25,797 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:34:25,801 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:34:25,801 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testGetLeaderHostName() is started
+2023-09-18 23:34:28,992 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testGetLeaderHostName() is finished
+2023-09-18 23:34:28,994 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:34:28,999 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:34:29,000 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testNodes3() is started
+2023-09-18 23:34:32,173 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testNodes3() is finished
+2023-09-18 23:34:32,173 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:34:32,175 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:34:32,176 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testNodes9() is started
+2023-09-18 23:34:35,353 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testNodes9() is finished
+2023-09-18 23:34:35,353 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:34:35,354 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:34:35,354 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testNodes20() is started
+2023-09-18 23:34:38,573 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testNodes20() is finished
+2023-09-18 23:34:38,574 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
+2023-09-18 23:34:38,577 [myid:] - ERROR [main:o.w.l.WasabiListener5@22] - [WASABISTART]
+2023-09-18 23:34:38,578 [myid:] - ERROR [main:o.w.l.WasabiListener5@23] - [wasabi] testNodes100() is started
+2023-09-18 23:34:41,929 [myid:] - ERROR [main-EventThread:o.a.z.r.l.LeaderElectionSupport@271] - Failed in state STOP
+org.apache.zookeeper.KeeperException$NoNodeException: KeeperErrorCode = NoNode for /1695054851977_1/n_0000000006
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:117)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:53)
+	at org.apache.zookeeper.ZooKeeper.getData(ZooKeeper.java:1972)
+	at org.apache.zookeeper.ZooKeeper.getData(ZooKeeper.java:2000)
+	at org.apache.zookeeper.recipes.leader.LeaderElectionSupport.toLeaderOffers(LeaderElectionSupport.java:310)
+	at org.apache.zookeeper.recipes.leader.LeaderElectionSupport.determineElectionStatus(LeaderElectionSupport.java:199)
+	at org.apache.zookeeper.recipes.leader.LeaderElectionSupport.process(LeaderElectionSupport.java:335)
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:565)
+	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:540)
+2023-09-18 23:34:42,016 [myid:] - ERROR [main-EventThread:o.a.z.r.l.LeaderElectionSupport@271] - Failed in state DETERMINE
+org.apache.zookeeper.KeeperException$NoNodeException: KeeperErrorCode = NoNode for /1695054851977_1/n_0000000017
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:117)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:53)
+	at org.apache.zookeeper.ZooKeeper.getData(ZooKeeper.java:1972)
+	at org.apache.zookeeper.ZooKeeper.getData(ZooKeeper.java:2000)
+	at org.apache.zookeeper.recipes.leader.LeaderElectionSupport.toLeaderOffers(LeaderElectionSupport.java:310)
+	at org.apache.zookeeper.recipes.leader.LeaderElectionSupport.determineElectionStatus(LeaderElectionSupport.java:199)
+	at org.apache.zookeeper.recipes.leader.LeaderElectionSupport.process(LeaderElectionSupport.java:335)
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:565)
+	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:540)
+2023-09-18 23:34:42,024 [myid:] - ERROR [main-EventThread:o.a.z.r.l.LeaderElectionSupport@271] - Failed in state STOP
+org.apache.zookeeper.KeeperException$NoNodeException: KeeperErrorCode = NoNode for /1695054851977_1/n_0000000015
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:117)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:53)
+	at org.apache.zookeeper.ZooKeeper.getData(ZooKeeper.java:1972)
+	at org.apache.zookeeper.ZooKeeper.getData(ZooKeeper.java:2000)
+	at org.apache.zookeeper.recipes.leader.LeaderElectionSupport.toLeaderOffers(LeaderElectionSupport.java:310)
+	at org.apache.zookeeper.recipes.leader.LeaderElectionSupport.determineElectionStatus(LeaderElectionSupport.java:199)
+	at org.apache.zookeeper.recipes.leader.LeaderElectionSupport.process(LeaderElectionSupport.java:335)
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:565)
+	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:540)
+2023-09-18 23:34:42,084 [myid:] - ERROR [main-EventThread:o.a.z.r.l.LeaderElectionSupport@271] - Failed in state STOP
+org.apache.zookeeper.KeeperException$NoNodeException: KeeperErrorCode = NoNode for /1695054851977_1/n_0000000099
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:117)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:53)
+	at org.apache.zookeeper.ZooKeeper.getData(ZooKeeper.java:1972)
+	at org.apache.zookeeper.ZooKeeper.getData(ZooKeeper.java:2000)
+	at org.apache.zookeeper.recipes.leader.LeaderElectionSupport.toLeaderOffers(LeaderElectionSupport.java:310)
+	at org.apache.zookeeper.recipes.leader.LeaderElectionSupport.determineElectionStatus(LeaderElectionSupport.java:199)
+	at org.apache.zookeeper.recipes.leader.LeaderElectionSupport.process(LeaderElectionSupport.java:335)
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:565)
+	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:540)
+2023-09-18 23:34:42,198 [myid:] - ERROR [main:o.w.l.WasabiListener5@30] - [wasabi] testNodes100() is finished
+2023-09-18 23:34:42,199 [myid:] - ERROR [main:o.w.l.WasabiListener5@31] - [WASABIEND]
